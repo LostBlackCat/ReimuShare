@@ -1,0 +1,6 @@
+# Actual status
+* One major opinnion is that animals raised by humanbeings have rights like humanbeings and lives a happy life.
+* Another major opinion is that animals are suffering great pain and they totually have no rights or respect.
+* As a matter of fact. Both of them exists. In some area, most animals are taken good care of even if some animals like pig. People will let them fell less pain when killing them. However, in other places, thing may not be so fantasic to animals. We have to admit that some of us kill animals just for unresonable profile, vanity or just for fun. They killed animals in extremelly curel way. Thats what most of us cann't accept.  
+* We are happy to witness the found of all kinds of animal rights pretecion organizations and more and more volunteers participating various of activities. With the developing of humanbeings, animals rights were more and more think highly of. We start to care about what animals feeling and wether they lives well.
+* We are also sad to see news that there were still hundred of thousands of abandoned pet walking alone the street and have no place to sleep and  no food to eat. Hundreds of thousands of endanaged animals were being killed everyday illeagel because it will bring income to hunters.
