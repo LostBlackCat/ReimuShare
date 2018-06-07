@@ -1,12 +1,12 @@
 * Animals & people
-	* Relationship
+	* Relationship【Feng】
 		Should be like this...
-	* Actual state
+	* Actual state【Lu】
 		But actually it like this...
 * Humanity & ecology
-	* Humanity
+	* Humanity【He】
 		Treat animals in humanity
-	* Ecology
+	* Ecology【Wang】
 		The meaning to keep the balance of ecologial equilibrium
-* Take action
+* Take action【Xu】
 	* Humanitarianism activities

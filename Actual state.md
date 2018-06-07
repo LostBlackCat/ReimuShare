@@ -1,7 +1,12 @@
 # Reality
+* Well ,let know about some realities. The reality about the relationship between human beings and animals. 
+
 * Public expression
 	* One major opinion is that animals raised by human beings have rights like human beings and live a happy life.
+	* Like what displayed on television and printed on advertisement paper. They have big ‘play ground’ to play freely and eat delicious foods. Besides, they will accept physical examination and be treated timely. With reasonable and humanistic breeding they will keep in good health and have a positive mood.
 	* Another major opinion is that animals are suffering great pain and they totally have no rights or respect.
+	* We can also see on some video that many animal like pig will killed cruelly. Some pets like dogs were under maltreat of their owners. Some endangered animals were killed because of the drive of the of the profile.
+
 * Facts
 	*  As a matter of fact. Both of them exists. In some area, most animals are taken good care of even if some kind of animals like pigs. People will let them fell less pain when killing them. However, in other places, thing may not be so fantastic to animals. We have to admit that some of us kill animals just for unreasonable profile, vanity or just for fun. They killed animals in extremely cruel way. That's what most of us can't accept. 
 * Present situation & future
