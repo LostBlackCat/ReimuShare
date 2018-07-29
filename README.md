@@ -1,8 +1,8 @@
-# Read me
-欢迎。
+# 咪啪~
+- 就是一个堆放杂乱爬坑文件的Repo，请轻喷。
+- 咪啪~
 
+![Pic][id]
 
-![Hakurei Reimu][id]
-
-[id]:https://github.com/Hakurei-Reimu-SkylarkStudio/CodeChache/blob/master/CodeChache/Reimu.jpeg "Title"
-	Hakurei Reimu
+[id]:rm.png
+    Su yu
