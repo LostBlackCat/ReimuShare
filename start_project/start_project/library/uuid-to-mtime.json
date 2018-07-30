@@ -298,5 +298,15 @@
     "asset": 1532869440135,
     "meta": 1532869462711,
     "relativePath": "scripts\\star.js"
+  },
+  "49de01b1-fa49-4830-ac86-b8caccc4caf8": {
+    "asset": 1532941295817,
+    "meta": 1532941297893,
+    "relativePath": "scripts\\star.prefab"
+  },
+  "fc140fe0-3c5c-46de-bd06-ca832fbdabf8": {
+    "asset": 1532941891246,
+    "meta": 1532941894857,
+    "relativePath": "scripts\\Game.js"
   }
 }
