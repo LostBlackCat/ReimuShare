@@ -1,12 +1,13 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "",
+    "_name": "star",
     "_objFlags": 0,
     "_rawFiles": null,
     "data": {
       "__id__": 1
-    }
+    },
+    "asyncLoadAssets": false
   },
   {
     "__type__": "cc.Node",
@@ -129,7 +130,7 @@
       "__id__": 2
     },
     "_enabled": true,
-    "pickRadius": 0
+    "pickRadius": 60
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -139,7 +140,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "2932hoEkJGeIdhUByFm1Dc",
+    "fileId": "daNxEh+tNGU4L+6YLkPzpV",
     "sync": false
   },
   {
@@ -186,7 +187,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "d73y6rUHhNaKW1hhZoaybt",
+    "fileId": "3b3ROCVWpPO5IIRXP0CN9q",
     "sync": false
   }
 ]
