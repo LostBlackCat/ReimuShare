@@ -32,8 +32,12 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
-
+    onLoad: function onLoad() {
+        // 获取地平面的 y 轴坐标
+        this.groundY = this.ground.y + this.ground.height / 2;
+        // 生成一个新的星星
+        this.spawnNewStar();
+    },
     start: function start() {}
 }
 

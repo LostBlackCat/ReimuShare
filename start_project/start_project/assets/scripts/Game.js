@@ -33,8 +33,6 @@ cc.Class({
         // 生成一个新的星星
         this.spawnNewStar();
     },
-
-
     start()
     {
 

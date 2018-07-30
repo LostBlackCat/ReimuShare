@@ -280,12 +280,12 @@
     "relativePath": "textures\\star.png"
   },
   "745bcc9a-8180-417d-b83a-952470af319e": {
-    "asset": 1532871496412,
-    "meta": 1532871496482,
+    "asset": 1532961441083,
+    "meta": 1532961441106,
     "relativePath": "scene.fire"
   },
   "548932e3-761e-49db-afc7-bce7ccebd1cf": {
-    "asset": 1532869294676,
+    "asset": 1532955374423,
     "meta": 1532854177535,
     "relativePath": "scripts"
   },
@@ -294,19 +294,19 @@
     "meta": 1532868001256,
     "relativePath": "scripts\\Player.js"
   },
+  "fc140fe0-3c5c-46de-bd06-ca832fbdabf8": {
+    "asset": 1532960597038,
+    "meta": 1532960599689,
+    "relativePath": "scripts\\Game.js"
+  },
   "4a2ed775-10b9-42c3-ab22-3df96719478a": {
-    "asset": 1532869440135,
-    "meta": 1532869462711,
+    "asset": 1532961127415,
+    "meta": 1532961142361,
     "relativePath": "scripts\\star.js"
   },
-  "49de01b1-fa49-4830-ac86-b8caccc4caf8": {
-    "asset": 1532941295817,
-    "meta": 1532941297893,
+  "5359b300-cc8e-4905-966b-e4b7444165c2": {
+    "asset": 1532961433809,
+    "meta": 1532961433827,
     "relativePath": "scripts\\star.prefab"
-  },
-  "fc140fe0-3c5c-46de-bd06-ca832fbdabf8": {
-    "asset": 1532943807900,
-    "meta": 1532943858896,
-    "relativePath": "scripts\\Game.js"
   }
 }

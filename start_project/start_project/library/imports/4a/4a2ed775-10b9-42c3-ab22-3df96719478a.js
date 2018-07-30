@@ -18,8 +18,7 @@ cc.Class({
                 }
         },
 
-        // LIFE-CYCLE CALLBACKS:
-
+        // LIFE-CYCLE CALLBACKS:、
         // onLoad () {},
 
         start: function start() {}
