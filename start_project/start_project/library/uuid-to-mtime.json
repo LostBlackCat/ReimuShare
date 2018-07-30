@@ -225,7 +225,7 @@
     "relativePath": "prefab\\webview.prefab"
   },
   "0857d5e1-e5b1-48e2-80d6-5059f694276a": {
-    "asset": 1476929564000,
+    "asset": 1532868856509,
     "meta": 1476929488000,
     "relativePath": "audio"
   },
@@ -245,7 +245,7 @@
     "relativePath": "mikado_outline_shadow.fnt"
   },
   "d6ff10bc-4d58-4d63-8af4-19151a90da2c": {
-    "asset": 1476929564000,
+    "asset": 1532868856672,
     "meta": 1476929488000,
     "relativePath": "textures"
   },
@@ -280,12 +280,12 @@
     "relativePath": "textures\\star.png"
   },
   "745bcc9a-8180-417d-b83a-952470af319e": {
-    "asset": 1532868208130,
-    "meta": 1532868208176,
+    "asset": 1532871496412,
+    "meta": 1532871496482,
     "relativePath": "scene.fire"
   },
   "548932e3-761e-49db-afc7-bce7ccebd1cf": {
-    "asset": 1532854177527,
+    "asset": 1532869294676,
     "meta": 1532854177535,
     "relativePath": "scripts"
   },
@@ -293,5 +293,10 @@
     "asset": 1532867983956,
     "meta": 1532868001256,
     "relativePath": "scripts\\Player.js"
+  },
+  "4a2ed775-10b9-42c3-ab22-3df96719478a": {
+    "asset": 1532869440135,
+    "meta": 1532869462711,
+    "relativePath": "scripts\\star.js"
   }
 }
