@@ -245,7 +245,7 @@
     "relativePath": "mikado_outline_shadow.fnt"
   },
   "d6ff10bc-4d58-4d63-8af4-19151a90da2c": {
-    "asset": 1532868856672,
+    "asset": 1532964623610,
     "meta": 1476929488000,
     "relativePath": "textures"
   },
@@ -285,7 +285,7 @@
     "relativePath": "scene.fire"
   },
   "548932e3-761e-49db-afc7-bce7ccebd1cf": {
-    "asset": 1532955374423,
+    "asset": 1532965150155,
     "meta": 1532854177535,
     "relativePath": "scripts"
   },
