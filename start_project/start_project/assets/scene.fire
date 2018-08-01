@@ -62,17 +62,14 @@
         "__id__": 5
       },
       {
-        "__id__": 10
+        "__id__": 9
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 12
-      },
-      {
-        "__id__": 13
+        "__id__": 11
       }
     ],
     "_prefab": null,
@@ -207,9 +204,6 @@
     "_components": [
       {
         "__id__": 8
-      },
-      {
-        "__id__": 9
       }
     ],
     "_prefab": null,
@@ -419,19 +413,6 @@
     "_atlas": null
   },
   {
-    "__type__": "80e55qbCKtEwr8HSEoj1GgC",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 5
-    },
-    "_enabled": true,
-    "jumpHeight": 200,
-    "jumpDuration": 0.3,
-    "maxMoveSpeed": 400,
-    "accel": 350
-  },
-  {
     "__type__": "cc.Node",
     "_name": "ground",
     "_objFlags": 0,
@@ -443,7 +424,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 11
+        "__id__": 10
       }
     ],
     "_prefab": null,
@@ -488,7 +469,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 10
+      "__id__": 9
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -524,25 +505,5 @@
     },
     "_fitWidth": false,
     "_fitHeight": true
-  },
-  {
-    "__type__": "fc140/gPFxG3r0GyoMvvav4",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "starPrefab": {
-      "__uuid__": "66977dff-136a-4fdb-bc51-c536edfed40d"
-    },
-    "maxStarDuration": 5,
-    "minStarDuration": 3,
-    "ground": {
-      "__id__": 10
-    },
-    "player": {
-      "__id__": 5
-    }
   }
 ]
