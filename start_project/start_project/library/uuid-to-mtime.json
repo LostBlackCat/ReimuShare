@@ -280,13 +280,23 @@
     "relativePath": "textures\\star.png"
   },
   "745bcc9a-8180-417d-b83a-952470af319e": {
-    "asset": 1533122257361,
-    "meta": 1533122257387,
+    "asset": 1533122426308,
+    "meta": 1533122426339,
     "relativePath": "scene.fire"
   },
   "548932e3-761e-49db-afc7-bce7ccebd1cf": {
     "asset": 1532965150155,
     "meta": 1532854177535,
     "relativePath": "scripts"
+  },
+  "63e85451-cbe1-44b7-87c5-49d196c4f548": {
+    "asset": 1533122629137,
+    "meta": 1533122635226,
+    "relativePath": "scripts\\Player.js"
+  },
+  "5341e785-522d-4994-bc28-d5dc0eb3927b": {
+    "asset": 1533123075330,
+    "meta": 1533123078113,
+    "relativePath": "scripts\\Star.js"
   }
 }
