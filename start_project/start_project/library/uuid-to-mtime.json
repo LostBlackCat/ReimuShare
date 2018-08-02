@@ -279,13 +279,8 @@
     "meta": 1532964623651,
     "relativePath": "textures\\star.png"
   },
-  "745bcc9a-8180-417d-b83a-952470af319e": {
-    "asset": 1533135763263,
-    "meta": 1533135763298,
-    "relativePath": "scene.fire"
-  },
   "548932e3-761e-49db-afc7-bce7ccebd1cf": {
-    "asset": 1532965150155,
+    "asset": 1533127555710,
     "meta": 1532854177535,
     "relativePath": "scripts"
   },
@@ -308,5 +303,10 @@
     "asset": 1533135713276,
     "meta": 1533135718430,
     "relativePath": "scripts\\Game.js"
+  },
+  "745bcc9a-8180-417d-b83a-952470af319e": {
+    "asset": 1533178344917,
+    "meta": 1533179627868,
+    "relativePath": "scene.fire"
   }
 }

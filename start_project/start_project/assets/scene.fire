@@ -691,6 +691,8 @@
     "player": {
       "__id__": 5
     },
-    "scoreDisplay": null
+    "scoreDisplay": {
+      "__id__": 15
+    }
   }
 ]
