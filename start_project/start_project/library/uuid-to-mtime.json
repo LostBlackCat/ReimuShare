@@ -299,14 +299,14 @@
     "meta": 1533135671824,
     "relativePath": "scripts\\Star.js"
   },
-  "d9b4ed6d-ff6f-4218-a9c5-d3049c676c63": {
-    "asset": 1533135713276,
-    "meta": 1533135718430,
-    "relativePath": "scripts\\Game.js"
-  },
   "745bcc9a-8180-417d-b83a-952470af319e": {
-    "asset": 1533178344917,
-    "meta": 1533179627868,
+    "asset": 1533183176505,
+    "meta": 1533183176559,
     "relativePath": "scene.fire"
+  },
+  "d9b4ed6d-ff6f-4218-a9c5-d3049c676c63": {
+    "asset": 1533184406608,
+    "meta": 1533185841625,
+    "relativePath": "scripts\\Game.js"
   }
 }
