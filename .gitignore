@@ -272,12 +272,12 @@ CocosGame/cocos2d/external/recast/proj.win32/Debug.win32/
 CocosGame/proj.win32/Debug.win32/
   
  # Ignore files build by ndk and eclipse
- libs/
- bin/
- obj/
- gen/
- assets/
- local.properties
+ CocosGame/libs/
+ CocosGame/bin/
+ CocosGame/obj/
+ CocosGame/gen/
+ CocosGame/assets/
+ CocosGame/local.properties
   
   
  # Ignore python compiled files
