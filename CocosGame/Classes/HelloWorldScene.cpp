@@ -31,6 +31,7 @@
 
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
+#include<WinBase.h>
 
 USING_NS_CC;
 
@@ -51,6 +52,7 @@ bool HelloWorld::init()
 {
     //////////////////////////////
     // 1. super init first
+	OutputDebugString(L"Init\n\n\n\n");
     if ( !Scene::init() )
     {
         return false;
