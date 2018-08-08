@@ -1,3 +1,10 @@
+//HelloWorldScene.cpp
+//Update:2018/08/08 
+//By:Hanyuu
+/*
+	Note:
+
+*/
 /****************************************************************************
  Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
  
@@ -103,6 +110,7 @@ bool HelloWorld::init()
 
     // add "HelloWorld" splash screen"
     auto sprite = Sprite::create("HelloWorld.png");
+	
     if (sprite == nullptr)
     {
         problemLoading("'HelloWorld.png'");
