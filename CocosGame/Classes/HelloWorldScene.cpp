@@ -94,6 +94,12 @@ bool HelloWorld::init()
 	this->addChild(menu, 1);
 	/////////////////////////////
 	// 3. add your codes below...
+	auto hanyuu=Sprite::create("hanyuuLight.jpg");
+	this->addChild(hanyuu, 10);
+	hanyuu->setPosition(Vec2(100, 100));
+	hanyuu->setRotation(40);
+	hanyuu->setScale(0.1);
+	hanyuu->setAnchorPoint(Vec2(0, 0));
 
 	// add a label shows "Hello World"
 	// create and initialize a label
