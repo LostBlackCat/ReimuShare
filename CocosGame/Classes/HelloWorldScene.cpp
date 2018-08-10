@@ -123,6 +123,16 @@ bool HelloWorld::init()
 	enemySprite->runAction(moveBy->clone()); // oops, this will not be unique!
 	// uses the Actions current internal state as a starting point.
 
+	auto dirs = Director::getInstance();
+	Size dvisibleSize = dirs->getVisibleSize();
+
+	auto myScene = Scene::create();
+
+	auto sprite1 = Sprite::create("hanyuuLight.jpg");
+	sprite1->setPosition(Vec2(100, 100));
+
+	myScene->addChild(sprite1);
+
 	// add a label shows "Hello World"
 	// create and initialize a label
 

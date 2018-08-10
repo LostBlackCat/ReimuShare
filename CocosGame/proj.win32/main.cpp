@@ -28,6 +28,7 @@
 
 USING_NS_CC;
 
+//主函数入口
 int WINAPI _tWinMain(HINSTANCE hInstance,
                        HINSTANCE hPrevInstance,
                        LPTSTR    lpCmdLine,
@@ -37,7 +38,13 @@ int WINAPI _tWinMain(HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(lpCmdLine);
 
     // create the application instance
+	//定义一个app对象
     AppDelegate app;
+	/*
+	定义好app对象后首先调用CCApplicationPratocol(app对象的基类)的构造函数
+	然后调用CCApplication(派生类)的构造函数，最后调用APPDeletegate(派生类)的构造函数
+	*/
+
 	OutputDebugString(L"Main\n\n\n\n");
     return Application::getInstance()->run();
 }
