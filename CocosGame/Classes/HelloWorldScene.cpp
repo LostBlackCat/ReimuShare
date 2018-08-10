@@ -102,14 +102,17 @@ bool HelloWorld::init()
 	hanyuu->setOpacity(125);
 	hanyuu->setAnchorPoint(Vec2(0, 0));
 	auto mv = MoveTo::create(2, Vec2(100, 100));
-	hanyuu->runAction(mv);
+	auto jump = JumpBy::create(1, Vec2(0, 0), 10, 1);
+	auto seq = Sequence::create(mv,jump,nullptr);
+	hanyuu->runAction(seq);
 
 
 	// create our Sprites
 	auto heroSprite = Sprite::create("herosprite.png");
-	auto enemySprite = Sprite::create("enemysprite.png");
-	this->addChild(heroSprite,20);
-	this->addChild(enemySprite,21);
+	auto enemySprite = Sprite::create("hanyuuLight.jpg");
+	this->addChild(heroSprite,21);
+	this->addChild(enemySprite,20);
+	enemySprite->setScale(0.3);
 	// create an Action
 	auto moveBy = MoveBy::create(10, Vec2(400, 100));
 
@@ -117,8 +120,8 @@ bool HelloWorld::init()
 	heroSprite->runAction(moveBy);
 
 	// run it on our enemy
-	enemySprite->runAction(moveBy); // oops, this will not be unique!
-									// uses the Actions current internal state as a starting point.
+	enemySprite->runAction(moveBy->clone()); // oops, this will not be unique!
+	// uses the Actions current internal state as a starting point.
 
 	// add a label shows "Hello World"
 	// create and initialize a label
