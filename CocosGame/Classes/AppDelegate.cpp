@@ -81,8 +81,10 @@ static int register_all_packages()
 
 bool AppDelegate::applicationDidFinishLaunching() {
 	// initialize director
+	//³õÊ¼»¯³¡¾°
 	auto director = Director::getInstance();
 	auto glview = director->getOpenGLView();
+
 	if (!glview) {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
 		glview = GLViewImpl::createWithRect("HanyuuGame", cocos2d::Rect(0, 0, designResolutionSize.width, designResolutionSize.height));
@@ -121,9 +123,16 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
 	// create a scene. it's an autorelease object
 	auto scene = HelloWorld::createScene();
-
+	auto scenee = HelloWorld::createScene();
+	auto hanyuu = Sprite::create("hanyuuLight.jpg");
+	scenee->addChild(hanyuu,0);
 	// run
 	director->runWithScene(scene);
+	director->runWithScene(scenee);
+	director->pushScene(scenee);
+	//director->popScene();
+	//director->replaceScene(scenee);
+
 
 	return true;
 }
