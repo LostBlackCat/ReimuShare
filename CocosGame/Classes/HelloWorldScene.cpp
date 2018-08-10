@@ -99,9 +99,27 @@ bool HelloWorld::init()
 	hanyuu->setPosition(Vec2(0, 0));
 	hanyuu->setRotation(0);
 	hanyuu->setScale(0.3);
+	hanyuu->setOpacity(125);
 	hanyuu->setAnchorPoint(Vec2(0, 0));
 	auto mv = MoveTo::create(2, Vec2(100, 100));
 	hanyuu->runAction(mv);
+
+
+	// create our Sprites
+	auto heroSprite = Sprite::create("herosprite.png");
+	auto enemySprite = Sprite::create("enemysprite.png");
+	this->addChild(heroSprite,20);
+	this->addChild(enemySprite,21);
+	// create an Action
+	auto moveBy = MoveBy::create(10, Vec2(400, 100));
+
+	// run it on our hero
+	heroSprite->runAction(moveBy);
+
+	// run it on our enemy
+	enemySprite->runAction(moveBy); // oops, this will not be unique!
+									// uses the Actions current internal state as a starting point.
+
 	// add a label shows "Hello World"
 	// create and initialize a label
 
