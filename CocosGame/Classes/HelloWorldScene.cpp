@@ -94,7 +94,7 @@ bool HelloWorld::init()
 	this->addChild(menu, 1);
 	/////////////////////////////
 	// 3. add your codes below...
-	auto hanyuu=Sprite::create("hanyuuLight.jpg");
+	auto hanyuu = Sprite::create("hanyuuLight.jpg");
 	this->addChild(hanyuu, 10);
 	hanyuu->setPosition(Vec2(0, 0));
 	hanyuu->setRotation(0);
@@ -103,15 +103,15 @@ bool HelloWorld::init()
 	hanyuu->setAnchorPoint(Vec2(0, 0));
 	auto mv = MoveTo::create(2, Vec2(100, 100));
 	auto jump = JumpBy::create(1, Vec2(0, 0), 10, 1);
-	auto seq = Sequence::create(mv,jump,nullptr);
+	auto seq = Sequence::create(mv, jump, nullptr);
 	hanyuu->runAction(seq);
 
 
 	// create our Sprites
 	auto heroSprite = Sprite::create("herosprite.png");
 	auto enemySprite = Sprite::create("hanyuuLight.jpg");
-	this->addChild(heroSprite,21);
-	this->addChild(enemySprite,20);
+	this->addChild(heroSprite, 21);
+	this->addChild(enemySprite, 20);
 	enemySprite->setScale(0.3);
 	// create an Action
 	auto moveBy = MoveBy::create(10, Vec2(400, 100));
