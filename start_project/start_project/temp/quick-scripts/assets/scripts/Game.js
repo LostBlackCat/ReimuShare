@@ -18,6 +18,11 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        // 得分音效资源
+        scoreAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
         // 这个属性引用了星星预制资源
         starPrefab: {
             default: null,
@@ -39,11 +44,6 @@ cc.Class({
         scoreDisplay: {
             default: null,
             type: cc.Label
-        },
-        // 得分音效资源
-        scoreAudio: {
-            default: null,
-            type: cc.AudioClip
         }
     },
 
@@ -94,8 +94,8 @@ cc.Class({
         cc.audioEngine.playEffect(this.scoreAudio, false);
     },
     gameOver: function gameOver() {
-        this.player.stopAllActions(); //停止 player 节点的跳跃动作
         cc.director.loadScene('game');
+        this.player.stopAllActions(); //停止 player 节点的跳跃动作
     },
     // start()
     // {

@@ -20,6 +20,11 @@ cc.Class({
         maxMoveSpeed: 0,
         // 加速度
         accel: 0,
+        // 跳跃音效资源
+        jumpAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
     },
     setJumpAction: function ()
     {
@@ -27,9 +32,15 @@ cc.Class({
         var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
         // 下落
         var jumpDown = cc.moveBy(this.jumpDuration, cc.p(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
+        // 添加一个回调函数，用于在动作结束时调用我们定义的其他方法
+        var callback = cc.callFunc(this.playJumpSound, this);
         // 不断重复
         return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
-    }, 
+    },
+    playJumpSound: function () {
+        // 调用声音引擎播放声音
+        cc.audioEngine.playEffect(this.jumpAudio, false);
+    },
     setInputControl: function ()
     {
         var self = this;
@@ -90,15 +101,19 @@ cc.Class({
     },
 
     // update (dt) {},
-    update: function (dt) {
+    update: function (dt)
+    {
         // 根据当前加速度方向每帧更新速度
-        if (this.accLeft) {
+        if (this.accLeft)
+        {
             this.xSpeed -= this.accel * dt;
-        } else if (this.accRight) {
+        } else if (this.accRight)
+        {
             this.xSpeed += this.accel * dt;
         }
         // 限制主角的速度不能超过最大值
-        if ( Math.abs(this.xSpeed) > this.maxMoveSpeed ) {
+        if (Math.abs(this.xSpeed) > this.maxMoveSpeed)
+        {
             // if speed reach limit, use max speed with current direction
             this.xSpeed = this.maxMoveSpeed * this.xSpeed / Math.abs(this.xSpeed);
         }

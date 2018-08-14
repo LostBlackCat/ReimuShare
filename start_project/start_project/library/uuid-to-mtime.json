@@ -51,7 +51,7 @@
   },
   "55d110b9-bab6-4d9d-9416-03e46904fa35": {
     "asset": 1476929488000,
-    "meta": 1532829963538,
+    "meta": 1534229308537,
     "relativePath": "audio\\score.mp3"
   },
   "977cfe9b-21c7-498e-b060-541800511a8b": {
@@ -98,11 +98,6 @@
     "asset": 1533127555710,
     "meta": 1532854177535,
     "relativePath": "scripts"
-  },
-  "63e85451-cbe1-44b7-87c5-49d196c4f548": {
-    "asset": 1533122629137,
-    "meta": 1533122635226,
-    "relativePath": "scripts\\Player.js"
   },
   "2d7bbaa4-a3fc-4dd6-98c5-743d2d403496": {
     "asset": 1533127458974,
@@ -305,8 +300,13 @@
     "relativePath": "scripts\\Star.js"
   },
   "d9b4ed6d-ff6f-4218-a9c5-d3049c676c63": {
-    "asset": 1534222084352,
-    "meta": 1534222088817,
+    "asset": 1534229283301,
+    "meta": 1534229285768,
     "relativePath": "scripts\\Game.js"
+  },
+  "63e85451-cbe1-44b7-87c5-49d196c4f548": {
+    "asset": 1534229497378,
+    "meta": 1534229512231,
+    "relativePath": "scripts\\Player.js"
   }
 }
