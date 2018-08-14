@@ -33,6 +33,11 @@ cc.Class({
         scoreDisplay: {
             default: null,
             type: cc.Label
+        },
+        // 得分音效资源
+        scoreAudio: {
+            default: null,
+            type: cc.AudioClip
         }
     },
 
@@ -83,19 +88,25 @@ cc.Class({
         this.score += 1;
         // 更新 scoreDisplay Label 的文字
         this.scoreDisplay.string = 'Score: ' + this.score.toString();
+        // 播放得分音效
+        cc.audioEngine.playEffect(this.scoreAudio, false);
     },
-    gameOver: function () {
-        this.player.stopAllActions(); //停止 player 节点的跳跃动作
+    gameOver: function ()
+    {
         cc.director.loadScene('game');
+        this.player.stopAllActions(); //停止 player 节点的跳跃动作
+        
     },
     // start()
     // {
 
     // },
-    update: function (dt) {
+    update: function (dt)
+    {
         // 每帧更新计时器，超过限度还没有生成新的星星
         // 就会调用游戏失败逻辑
-        if (this.timer > this.starDuration) {
+        if (this.timer > this.starDuration)
+        {
             this.gameOver();
             return;
         }
