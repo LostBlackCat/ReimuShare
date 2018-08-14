@@ -85,12 +85,24 @@ cc.Class({
         this.score += 1;
         // 更新 scoreDisplay Label 的文字
         this.scoreDisplay.string = 'Score: ' + this.score.toString();
-    }
+    },
+    gameOver: function gameOver() {
+        this.player.stopAllActions(); //停止 player 节点的跳跃动作
+        cc.director.loadScene('game');
+    },
     // start()
     // {
 
     // },
-
+    update: function update(dt) {
+        // 每帧更新计时器，超过限度还没有生成新的星星
+        // 就会调用游戏失败逻辑
+        if (this.timer > this.starDuration) {
+            this.gameOver();
+            return;
+        }
+        this.timer += dt;
+    }
     // update (dt) {},
 });
 
