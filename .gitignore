@@ -264,21 +264,6 @@ QT/QWidget/build-QWidget-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
 
 */Debug.win32
 
- # Ignore cocos2d-x files, now cocos2d-x 3.0rc
-CocosGame/cocos2d/
-CocosGame/cocos2d/cocos/2d/Debug.win32/
-CocosGame/cocos2d/cocos/editor-support/spine/proj.win32/Debug.win32/
-CocosGame/cocos2d/external/recast/proj.win32/Debug.win32/
-CocosGame/proj.win32/Debug.win32/
-  
- # Ignore files build by ndk and eclipse
- CocosGame/libs/
- CocosGame/bin/
- CocosGame/obj/
- CocosGame/gen/
- CocosGame/assets/
- CocosGame/local.properties
-  
   
  # Ignore python compiled files
  *.pyc
@@ -299,10 +284,6 @@ CocosGame/proj.win32/Debug.win32/
  DerivedData/
   
   
- # cocostudio
- cocostudio/Backup
- cocostudio/Resources
- 	
  # Others should Ignored
 
 */library
@@ -310,3 +291,8 @@ CocosGame/proj.win32/Debug.win32/
 */build
 */*/library/
 */*/local/
+
+c2x/cocos2d
+c2x/proj.win32/Debug.win32/
+NewProject/local
+NewProject/library

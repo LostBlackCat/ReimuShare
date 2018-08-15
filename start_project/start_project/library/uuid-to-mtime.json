@@ -95,7 +95,7 @@
     "relativePath": "textures\\star.png"
   },
   "548932e3-761e-49db-afc7-bce7ccebd1cf": {
-    "asset": 1533127555710,
+    "asset": 1534215211202,
     "meta": 1532854177535,
     "relativePath": "scripts"
   },
@@ -105,8 +105,8 @@
     "relativePath": "star.prefab"
   },
   "745bcc9a-8180-417d-b83a-952470af319e": {
-    "asset": 1533975515602,
-    "meta": 1533975515731,
+    "asset": 1534231095712,
+    "meta": 1534231095850,
     "relativePath": "scene.fire"
   },
   "71561142-4c83-4933-afca-cb7a17f67053": {

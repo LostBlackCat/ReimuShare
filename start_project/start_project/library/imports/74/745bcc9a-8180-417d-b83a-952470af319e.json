@@ -462,7 +462,8 @@
     "jumpHeight": 0,
     "jumpDuration": 0,
     "maxMoveSpeed": 0,
-    "accel": 0
+    "accel": 0,
+    "jumpAudio": null
   },
   {
     "__type__": "cc.Sprite",
@@ -501,7 +502,8 @@
     "jumpHeight": 200,
     "jumpDuration": 0.3,
     "maxMoveSpeed": 400,
-    "accel": 300
+    "accel": 300,
+    "jumpAudio": "E:/Repos/ReimuShare/start_project/start_project/assets/audio/jump.mp3"
   },
   {
     "__type__": "cc.Node",
@@ -681,6 +683,7 @@
       "__id__": 2
     },
     "_enabled": true,
+    "scoreAudio": "E:/Repos/ReimuShare/start_project/start_project/assets/audio/score.mp3",
     "starPrefab": {
       "__uuid__": "2d7bbaa4-a3fc-4dd6-98c5-743d2d403496"
     },
