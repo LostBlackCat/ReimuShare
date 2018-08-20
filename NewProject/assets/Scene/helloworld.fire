@@ -370,7 +370,7 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 40,
+    "_actualFontSize": 60,
     "_fontSize": 60,
     "_lineHeight": 60,
     "_enableWrapText": true,
