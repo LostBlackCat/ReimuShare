@@ -34,6 +34,7 @@ Scene* HelloWorld::createScene()
 	reader->setup();
 	Scene * scene = reader->getSceneGraph();
 	Director::getInstance()->replaceScene(scene);
+	//scene->getChildByName("");
 	return scene;
     //return HelloWorld::create();
 }
