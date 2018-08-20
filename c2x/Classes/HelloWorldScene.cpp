@@ -34,7 +34,11 @@ Scene* HelloWorld::createScene()
 	reader->setup();
 	Scene * scene = reader->getSceneGraph();
 	Director::getInstance()->replaceScene(scene);
-	//scene->getChildByName("");
+	auto label=scene->getChildByName("label");
+	if (label!=nullptr)
+	{
+		label->setColor(Color3B::RED);
+	}
 	return scene;
     //return HelloWorld::create();
 }
