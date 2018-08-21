@@ -74,6 +74,51 @@
 									"w": 1600,
 									"h": 900
 								},
+								"enabled": false,
+								"name": "videoplayer",
+								"anchorPoint": {
+									"x": 0,
+									"y": 0
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": -800,
+									"y": -450
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"isLocal": true,
+							"fullScreen": false,
+							"keepAspect": true,
+							"url": "creator/Video/EV0301.mp4"
+						},
+						"object_type": "VideoPlayer",
+						"children": []
+					},
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 1600,
+									"h": 900
+								},
 								"enabled": true,
 								"name": "background",
 								"anchorPoint": {
@@ -91,7 +136,7 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": 0,
+									"x": 6,
 									"y": 0
 								},
 								"rotationSkewX": 0,
@@ -138,8 +183,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": 0,
-									"y": 0
+									"x": -584,
+									"y": 343
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -187,8 +232,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": 0,
-									"y": 0
+									"x": -707,
+									"y": 344
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -206,6 +251,211 @@
 						"children": []
 					}
 				]
+			},
+			{
+				"object": {
+					"node": {
+						"contentSize": {
+							"w": 100,
+							"h": 40
+						},
+						"enabled": true,
+						"name": "button",
+						"anchorPoint": {
+							"x": 0.5,
+							"y": 0.5
+						},
+						"cascadeOpacityEnabled": true,
+						"color": {
+							"r": 255,
+							"g": 255,
+							"b": 255
+						},
+						"globalZOrder": 0,
+						"localZOrder": 0,
+						"opacity": 255,
+						"opacityModifyRGB": false,
+						"position": {
+							"x": 729,
+							"y": 50
+						},
+						"rotationSkewX": 0,
+						"rotationSkewY": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"skewX": 0,
+						"skewY": 0,
+						"tag": -1,
+						"groupIndex": 0,
+						"colliders": []
+					},
+					"ignoreContentAdaptWithSize": false,
+					"spriteFrameName": "image/default_btn_normal.png",
+					"transition": 2,
+					"pressedSpriteFrameName": "image/default_btn_pressed.png",
+					"disabledSpriteFrameName": "image/default_btn_disabled.png"
+				},
+				"object_type": "Button",
+				"children": [
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 100,
+									"h": 40
+								},
+								"enabled": true,
+								"name": "Label",
+								"anchorPoint": {
+									"x": 0.5,
+									"y": 0.5
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 0,
+									"g": 0,
+									"b": 0
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": -232,
+									"y": -91
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"fontSize": 20,
+							"labelText": "button",
+							"horizontalAlignment": "Center",
+							"verticalAlignment": "Center",
+							"overflowType": "Clamp",
+							"enableWrap": false,
+							"fontType": "System",
+							"fontName": "arial"
+						},
+						"object_type": "Label",
+						"children": []
+					}
+				]
+			},
+			{
+				"object": {
+					"node": {
+						"contentSize": {
+							"w": 500,
+							"h": 40
+						},
+						"enabled": true,
+						"name": "editbox",
+						"anchorPoint": {
+							"x": 0.5,
+							"y": 0.5
+						},
+						"cascadeOpacityEnabled": true,
+						"color": {
+							"r": 255,
+							"g": 255,
+							"b": 255
+						},
+						"globalZOrder": 0,
+						"localZOrder": 0,
+						"opacity": 255,
+						"opacityModifyRGB": false,
+						"position": {
+							"x": 375,
+							"y": 53
+						},
+						"rotationSkewX": 0,
+						"rotationSkewY": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"skewX": 0,
+						"skewY": 0,
+						"tag": -1,
+						"groupIndex": 0,
+						"colliders": []
+					},
+					"backgroundImage": "image/default_progressbar.png",
+					"returnType": "Default",
+					"inputFlag": "LowercaseAllCharacters",
+					"inputMode": "SingleLine",
+					"fontSize": 29,
+					"fontColor": {
+						"r": 0,
+						"g": 0,
+						"b": 0
+					},
+					"placeholder": "Enter text here...",
+					"placeholderFontSize": 20,
+					"placeholderFontColor": {
+						"r": 127,
+						"g": 127,
+						"b": 127
+					},
+					"maxLength": 8,
+					"text": ""
+				},
+				"object_type": "EditBox",
+				"children": []
+			},
+			{
+				"object": {
+					"node": {
+						"contentSize": {
+							"w": 500,
+							"h": 100
+						},
+						"enabled": true,
+						"name": "label",
+						"anchorPoint": {
+							"x": 0.5,
+							"y": 0.5
+						},
+						"cascadeOpacityEnabled": true,
+						"color": {
+							"r": 255,
+							"g": 255,
+							"b": 255
+						},
+						"globalZOrder": 0,
+						"localZOrder": 0,
+						"opacity": 255,
+						"opacityModifyRGB": false,
+						"position": {
+							"x": 378,
+							"y": 158
+						},
+						"rotationSkewX": 0,
+						"rotationSkewY": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"skewX": 0,
+						"skewY": 0,
+						"tag": -1,
+						"groupIndex": 0,
+						"colliders": []
+					},
+					"fontSize": 40,
+					"labelText": "A:balibali\nB:2333\nC:lkfdslkfh\nD:fjsdlkfjsdlkjf",
+					"horizontalAlignment": "Left",
+					"verticalAlignment": "Bottom",
+					"overflowType": "Clamp",
+					"enableWrap": true,
+					"fontType": "System",
+					"fontName": "arial"
+				},
+				"object_type": "Label",
+				"children": []
 			}
 		]
 	},
@@ -239,6 +489,106 @@
 				"y": 0,
 				"w": 1304,
 				"h": 733
+			}
+		},
+		{
+			"name": "image/default_btn_normal.png",
+			"texturePath": "creator/image/default_btn_normal.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 40,
+				"h": 40
+			},
+			"centerRect": {
+				"x": 8,
+				"y": 11,
+				"w": 25,
+				"h": 20
+			}
+		},
+		{
+			"name": "image/default_btn_pressed.png",
+			"texturePath": "creator/image/default_btn_pressed.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 40,
+				"h": 40
+			},
+			"centerRect": {
+				"x": 11,
+				"y": 11,
+				"w": 18,
+				"h": 22
+			}
+		},
+		{
+			"name": "image/default_btn_disabled.png",
+			"texturePath": "creator/image/default_btn_disabled.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 40,
+				"h": 40
+			},
+			"centerRect": {
+				"x": 15,
+				"y": 7,
+				"w": 10,
+				"h": 24
+			}
+		},
+		{
+			"name": "image/default_progressbar.png",
+			"texturePath": "creator/image/default_progressbar.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 30,
+				"h": 15
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 30,
+				"h": 15
+			},
+			"centerRect": {
+				"x": 5,
+				"y": 0,
+				"w": 20,
+				"h": 15
 			}
 		}
 	],
