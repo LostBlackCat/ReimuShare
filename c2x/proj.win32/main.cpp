@@ -17,7 +17,7 @@
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
@@ -26,11 +26,12 @@
 #include "AppDelegate.h"
 #include "cocos2d.h"
 #include "reader/CreatorReader.h"
+#include <vector>
 
 USING_NS_CC;
 
 int WINAPI _tWinMain(HINSTANCE hInstance,
-                       HINSTANCE hPrevInstance,
+                       HINSTANCE hPrevInstance,                                 
                        LPTSTR    lpCmdLine,
                        int       nCmdShow)
 {
