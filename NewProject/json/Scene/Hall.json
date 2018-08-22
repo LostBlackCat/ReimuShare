@@ -160,7 +160,7 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 160,
+									"w": 151,
 									"h": 40
 								},
 								"enabled": true,
@@ -180,7 +180,7 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": 506,
+									"x": 548,
 									"y": -378
 								},
 								"rotationSkewX": 0,
@@ -194,7 +194,7 @@
 								"colliders": []
 							},
 							"fontSize": 40,
-							"labelText": "游戏大厅",
+							"labelText": "Minimap",
 							"horizontalAlignment": "Center",
 							"verticalAlignment": "Center",
 							"overflowType": "None",
@@ -298,7 +298,151 @@
 				"object": {
 					"node": {
 						"contentSize": {
-							"w": 40,
+							"w": 102,
+							"h": 105
+						},
+						"enabled": true,
+						"name": "shadow",
+						"anchorPoint": {
+							"x": 0.5,
+							"y": 0.5
+						},
+						"cascadeOpacityEnabled": true,
+						"color": {
+							"r": 255,
+							"g": 255,
+							"b": 255
+						},
+						"globalZOrder": 0,
+						"localZOrder": 0,
+						"opacity": 255,
+						"opacityModifyRGB": false,
+						"position": {
+							"x": 641,
+							"y": 286
+						},
+						"rotationSkewX": -90,
+						"rotationSkewY": -90,
+						"scaleX": 3.9,
+						"scaleY": 3.9,
+						"skewX": 0,
+						"skewY": 0,
+						"tag": -1,
+						"groupIndex": 0,
+						"colliders": []
+					},
+					"spriteFrameName": "picture/shadow.png",
+					"spriteType": "Simple",
+					"srcBlend": 770,
+					"dstBlend": 771,
+					"trimEnabled": true,
+					"sizeMode": "Custom"
+				},
+				"object_type": "Sprite",
+				"children": [
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 397.7999323740115,
+									"h": 409.49993038501185
+								},
+								"enabled": true,
+								"name": "hallMessageRecordBox",
+								"anchorPoint": {
+									"x": 0.5,
+									"y": 0.5
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": 0,
+									"y": 0
+								},
+								"rotationSkewX": 90,
+								"rotationSkewY": 90,
+								"scaleX": 0.2564103,
+								"scaleY": 0.2564103,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"fontSize": 40,
+							"labelText": "A:balibali\nB:2333\nC:lkfdslkfh\nD:fjsdlkfjsdlkjf",
+							"horizontalAlignment": "Left",
+							"verticalAlignment": "Bottom",
+							"overflowType": "Clamp",
+							"enableWrap": true,
+							"fontType": "System",
+							"fontName": "arial"
+						},
+						"object_type": "Label",
+						"children": []
+					}
+				]
+			},
+			{
+				"object": {
+					"node": {
+						"contentSize": {
+							"w": 750,
+							"h": 750
+						},
+						"enabled": true,
+						"name": "hallMap",
+						"anchorPoint": {
+							"x": 0.5,
+							"y": 0.5
+						},
+						"cascadeOpacityEnabled": true,
+						"color": {
+							"r": 255,
+							"g": 255,
+							"b": 255
+						},
+						"globalZOrder": 0,
+						"localZOrder": 0,
+						"opacity": 255,
+						"opacityModifyRGB": false,
+						"position": {
+							"x": 1225,
+							"y": 525
+						},
+						"rotationSkewX": 0,
+						"rotationSkewY": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"skewX": 0,
+						"skewY": 0,
+						"tag": -1,
+						"groupIndex": 0,
+						"colliders": []
+					},
+					"spriteFrameName": "picture/map.png",
+					"spriteType": "Simple",
+					"srcBlend": 770,
+					"dstBlend": 771,
+					"trimEnabled": true,
+					"sizeMode": "Trimmed"
+				},
+				"object_type": "Sprite",
+				"children": []
+			},
+			{
+				"object": {
+					"node": {
+						"contentSize": {
+							"w": 118,
 							"h": 40
 						},
 						"enabled": true,
@@ -404,60 +548,11 @@
 				"object": {
 					"node": {
 						"contentSize": {
-							"w": 400,
-							"h": 700
+							"w": 100,
+							"h": 230.76923076923077
 						},
 						"enabled": true,
-						"name": "hallMessageRecordBox",
-						"anchorPoint": {
-							"x": 0,
-							"y": 0
-						},
-						"cascadeOpacityEnabled": true,
-						"color": {
-							"r": 255,
-							"g": 255,
-							"b": 255
-						},
-						"globalZOrder": 0,
-						"localZOrder": 0,
-						"opacity": 255,
-						"opacityModifyRGB": false,
-						"position": {
-							"x": 439,
-							"y": 92
-						},
-						"rotationSkewX": 0,
-						"rotationSkewY": 0,
-						"scaleX": 1,
-						"scaleY": 1,
-						"skewX": 0,
-						"skewY": 0,
-						"tag": -1,
-						"groupIndex": 0,
-						"colliders": []
-					},
-					"fontSize": 40,
-					"labelText": "A:balibali\nB:2333\nC:lkfdslkfh\nD:fjsdlkfjsdlkjf",
-					"horizontalAlignment": "Left",
-					"verticalAlignment": "Bottom",
-					"overflowType": "Clamp",
-					"enableWrap": true,
-					"fontType": "System",
-					"fontName": "arial"
-				},
-				"object_type": "Label",
-				"children": []
-			},
-			{
-				"object": {
-					"node": {
-						"contentSize": {
-							"w": 750,
-							"h": 750
-						},
-						"enabled": true,
-						"name": "map",
+						"name": "shadow",
 						"anchorPoint": {
 							"x": 0.5,
 							"y": 0.5
@@ -473,25 +568,25 @@
 						"opacity": 255,
 						"opacityModifyRGB": false,
 						"position": {
-							"x": 1217,
-							"y": 524
+							"x": 195,
+							"y": 450
 						},
 						"rotationSkewX": 0,
 						"rotationSkewY": 0,
-						"scaleX": 1,
-						"scaleY": 1,
+						"scaleX": 3.9,
+						"scaleY": 3.9,
 						"skewX": 0,
 						"skewY": 0,
 						"tag": -1,
 						"groupIndex": 0,
 						"colliders": []
 					},
-					"spriteFrameName": "picture/map.png",
+					"spriteFrameName": "picture/shadow.png",
 					"spriteType": "Simple",
 					"srcBlend": 770,
 					"dstBlend": 771,
 					"trimEnabled": true,
-					"sizeMode": "Trimmed"
+					"sizeMode": "Custom"
 				},
 				"object_type": "Sprite",
 				"children": []
@@ -500,13 +595,13 @@
 				"object": {
 					"node": {
 						"contentSize": {
-							"w": 0,
-							"h": 0
+							"w": 200,
+							"h": 900
 						},
 						"enabled": true,
 						"name": "layout",
 						"anchorPoint": {
-							"x": 0.3,
+							"x": 0,
 							"y": 0
 						},
 						"cascadeOpacityEnabled": true,
@@ -520,8 +615,8 @@
 						"opacity": 255,
 						"opacityModifyRGB": false,
 						"position": {
-							"x": 183,
-							"y": 92
+							"x": 0,
+							"y": 0
 						},
 						"rotationSkewX": 0,
 						"rotationSkewY": 0,
@@ -566,8 +661,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -45,
-									"y": 625
+									"x": 100,
+									"y": 793
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -626,7 +721,7 @@
 										"colliders": []
 									},
 									"fontSize": 40,
-									"labelText": "Label",
+									"labelText": "Player0",
 									"horizontalAlignment": "Left",
 									"verticalAlignment": "Center",
 									"overflowType": "Shrink",
@@ -635,7 +730,50 @@
 									"fontName": "arial"
 								},
 								"object_type": "Label",
-								"children": []
+								"children": [
+									{
+										"object": {
+											"node": {
+												"contentSize": {
+													"w": 0,
+													"h": 0
+												},
+												"enabled": true,
+												"name": "particlesystem",
+												"anchorPoint": {
+													"x": 0.5,
+													"y": 0.5
+												},
+												"cascadeOpacityEnabled": true,
+												"color": {
+													"r": 255,
+													"g": 255,
+													"b": 255
+												},
+												"globalZOrder": 0,
+												"localZOrder": 0,
+												"opacity": 255,
+												"opacityModifyRGB": false,
+												"position": {
+													"x": 0,
+													"y": 0
+												},
+												"rotationSkewX": 0,
+												"rotationSkewY": 0,
+												"scaleX": 1,
+												"scaleY": 1,
+												"skewX": 0,
+												"skewY": 0,
+												"tag": -1,
+												"groupIndex": 0,
+												"colliders": []
+											},
+											"particleFilename": "creator/particle/atom.plist"
+										},
+										"object_type": "Particle",
+										"children": []
+									}
+								]
 							}
 						]
 					},
@@ -663,8 +801,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -42,
-									"y": 475
+									"x": 100,
+									"y": 573
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -723,7 +861,7 @@
 										"colliders": []
 									},
 									"fontSize": 40,
-									"labelText": "Label",
+									"labelText": "Player1",
 									"horizontalAlignment": "Left",
 									"verticalAlignment": "Center",
 									"overflowType": "Shrink",
@@ -732,7 +870,50 @@
 									"fontName": "arial"
 								},
 								"object_type": "Label",
-								"children": []
+								"children": [
+									{
+										"object": {
+											"node": {
+												"contentSize": {
+													"w": 0,
+													"h": 0
+												},
+												"enabled": true,
+												"name": "particlesystem",
+												"anchorPoint": {
+													"x": 0.5,
+													"y": 0.5
+												},
+												"cascadeOpacityEnabled": true,
+												"color": {
+													"r": 255,
+													"g": 255,
+													"b": 255
+												},
+												"globalZOrder": 0,
+												"localZOrder": 0,
+												"opacity": 255,
+												"opacityModifyRGB": false,
+												"position": {
+													"x": 0,
+													"y": 0
+												},
+												"rotationSkewX": 0,
+												"rotationSkewY": 0,
+												"scaleX": 1,
+												"scaleY": 1,
+												"skewX": 0,
+												"skewY": 0,
+												"tag": -1,
+												"groupIndex": 0,
+												"colliders": []
+											},
+											"particleFilename": "creator/particle/atom.plist"
+										},
+										"object_type": "Particle",
+										"children": []
+									}
+								]
 							}
 						]
 					},
@@ -760,8 +941,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -45,
-									"y": 325
+									"x": 100,
+									"y": 353
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -820,7 +1001,7 @@
 										"colliders": []
 									},
 									"fontSize": 40,
-									"labelText": "Label",
+									"labelText": "Player2",
 									"horizontalAlignment": "Left",
 									"verticalAlignment": "Center",
 									"overflowType": "Shrink",
@@ -829,7 +1010,50 @@
 									"fontName": "arial"
 								},
 								"object_type": "Label",
-								"children": []
+								"children": [
+									{
+										"object": {
+											"node": {
+												"contentSize": {
+													"w": 0,
+													"h": 0
+												},
+												"enabled": true,
+												"name": "particlesystem",
+												"anchorPoint": {
+													"x": 0.5,
+													"y": 0.5
+												},
+												"cascadeOpacityEnabled": true,
+												"color": {
+													"r": 255,
+													"g": 255,
+													"b": 255
+												},
+												"globalZOrder": 0,
+												"localZOrder": 0,
+												"opacity": 255,
+												"opacityModifyRGB": false,
+												"position": {
+													"x": 0,
+													"y": 0
+												},
+												"rotationSkewX": 0,
+												"rotationSkewY": 0,
+												"scaleX": 1,
+												"scaleY": 1,
+												"skewX": 0,
+												"skewY": 0,
+												"tag": -1,
+												"groupIndex": 0,
+												"colliders": []
+											},
+											"particleFilename": "creator/particle/atom.plist"
+										},
+										"object_type": "Particle",
+										"children": []
+									}
+								]
 							}
 						]
 					},
@@ -857,8 +1081,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -42,
-									"y": 175
+									"x": 100,
+									"y": 133
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -917,7 +1141,7 @@
 										"colliders": []
 									},
 									"fontSize": 40,
-									"labelText": "Label",
+									"labelText": "Player3",
 									"horizontalAlignment": "Left",
 									"verticalAlignment": "Center",
 									"overflowType": "Shrink",
@@ -926,7 +1150,50 @@
 									"fontName": "arial"
 								},
 								"object_type": "Label",
-								"children": []
+								"children": [
+									{
+										"object": {
+											"node": {
+												"contentSize": {
+													"w": 0,
+													"h": 0
+												},
+												"enabled": true,
+												"name": "particlesystem",
+												"anchorPoint": {
+													"x": 0.5,
+													"y": 0.5
+												},
+												"cascadeOpacityEnabled": true,
+												"color": {
+													"r": 255,
+													"g": 255,
+													"b": 255
+												},
+												"globalZOrder": 0,
+												"localZOrder": 0,
+												"opacity": 255,
+												"opacityModifyRGB": false,
+												"position": {
+													"x": 0,
+													"y": 0
+												},
+												"rotationSkewX": 0,
+												"rotationSkewY": 0,
+												"scaleX": 1,
+												"scaleY": 1,
+												"skewX": 0,
+												"skewY": 0,
+												"tag": -1,
+												"groupIndex": 0,
+												"colliders": []
+											},
+											"particleFilename": "creator/particle/atom.plist"
+										},
+										"object_type": "Particle",
+										"children": []
+									}
+								]
 							}
 						]
 					}
@@ -964,6 +1231,56 @@
 				"y": 0,
 				"w": 1304,
 				"h": 733
+			}
+		},
+		{
+			"name": "picture/shadow.png",
+			"texturePath": "creator/picture/shadow.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 50,
+				"h": 50
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 50,
+				"h": 50
+			},
+			"centerRect": {
+				"x": 0,
+				"y": 0,
+				"w": 50,
+				"h": 50
+			}
+		},
+		{
+			"name": "picture/map.png",
+			"texturePath": "creator/picture/map.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 750
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 750,
+				"h": 750
+			},
+			"centerRect": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 750
 			}
 		},
 		{
@@ -1064,31 +1381,6 @@
 				"y": 0,
 				"w": 20,
 				"h": 15
-			}
-		},
-		{
-			"name": "picture/map.png",
-			"texturePath": "creator/picture/map.png",
-			"rect": {
-				"x": 0,
-				"y": 0,
-				"w": 750,
-				"h": 750
-			},
-			"offset": {
-				"x": 0,
-				"y": 0
-			},
-			"rotated": false,
-			"originalSize": {
-				"w": 750,
-				"h": 750
-			},
-			"centerRect": {
-				"x": 0,
-				"y": 0,
-				"w": 750,
-				"h": 750
 			}
 		},
 		{
