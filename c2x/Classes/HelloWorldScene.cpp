@@ -30,16 +30,17 @@ USING_NS_CC;
 
 Scene* HelloWorld::createScene()
 {
-	creator::CreatorReader* reader = creator::CreatorReader::createWithFilename("creator/Scene/Helloworld.ccreator");
+	//creator::CreatorReader* reader = creator::CreatorReader::createWithFilename("creator/Scene/Helloworld.ccreator");
+	creator::CreatorReader* reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
 	reader->setup();
 	Scene * scene = reader->getSceneGraph();
 	Director::getInstance()->replaceScene(scene);
 	//auto label=scene->getChildByName("label");
-	auto label = scene->getChildByName("Canvas")->getChildByName("label");
-	if (label != nullptr)
-	{
-		label->setColor(Color3B::RED);
-	}
+	//auto label = scene->getChildByName("Canvas")->getChildByName("label");
+	//if (label != nullptr)
+	//{
+	//	label->setColor(Color3B::RED);
+	//}
 	return scene;
 	//return HelloWorld::create();
 }
