@@ -23,7 +23,7 @@
  ****************************************************************************/
 
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+//#include "HelloWorldScene.h"
 #include "reader/CreatorReader.h"
 #include "proj.win32/hallFunction.h"
 
@@ -128,6 +128,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	reader->setup();
 	Scene * scene = reader->getSceneGraph();
 	Hall hall;
+
+	HallPlayer test[4] = { {"s","s"},{"s","s"},{"s","s"},{"s","s"} };
+	hall.feedPlayerInformation(test);
+
 	//Director::getInstance()->replaceScene(scene);
 	//Size mysize = Director::getInstance()->getVisibleSize();
     // run

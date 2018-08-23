@@ -126,6 +126,9 @@
     <ClCompile Include="hallFunction.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="testCode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">

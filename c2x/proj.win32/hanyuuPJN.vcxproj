@@ -187,6 +187,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="reader\dragonbones\textures\TextureData.cpp" />
     <ClCompile Include="reader\ui\PageView.cpp" />
     <ClCompile Include="reader\ui\RichtextStringVisitor.cpp" />
+    <ClCompile Include="testCode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
