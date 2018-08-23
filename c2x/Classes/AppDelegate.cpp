@@ -25,6 +25,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 #include "reader/CreatorReader.h"
+#include "proj.win32/hallFunction.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
@@ -126,6 +127,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	creator::CreatorReader* reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
 	reader->setup();
 	Scene * scene = reader->getSceneGraph();
+	Hall hall;
 	//Director::getInstance()->replaceScene(scene);
 	//Size mysize = Director::getInstance()->getVisibleSize();
     // run

@@ -123,6 +123,9 @@
     <ClCompile Include="reader\dragonbones\animation\WorldClock.cpp">
       <Filter>reader</Filter>
     </ClCompile>
+    <ClCompile Include="hallFunction.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -301,6 +304,12 @@
     </ClInclude>
     <ClInclude Include="reader\dragonbones\animation\WorldClock.h">
       <Filter>reader</Filter>
+    </ClInclude>
+    <ClInclude Include="hallFunction.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="hallPlayer.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
