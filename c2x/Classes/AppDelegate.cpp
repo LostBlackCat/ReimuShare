@@ -24,6 +24,7 @@
 
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "reader/CreatorReader.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
@@ -119,8 +120,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
-
+    //auto scene = HelloWorld::createScene();
+	creator::CreatorReader* reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
+	reader->setup();
+	Scene * scene = reader->getSceneGraph();
+	//Director::getInstance()->replaceScene(scene);
+	//Size mysize = Director::getInstance()->getVisibleSize();
     // run
     director->runWithScene(scene);
 
