@@ -167,48 +167,6 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 0,
-									"h": 0
-								},
-								"enabled": true,
-								"name": "hallTitleParticlesystem",
-								"anchorPoint": {
-									"x": 0.5,
-									"y": 0.5
-								},
-								"cascadeOpacityEnabled": true,
-								"color": {
-									"r": 255,
-									"g": 255,
-									"b": 255
-								},
-								"globalZOrder": 0,
-								"localZOrder": 0,
-								"opacity": 255,
-								"opacityModifyRGB": false,
-								"position": {
-									"x": 695,
-									"y": -381
-								},
-								"rotationSkewX": 0,
-								"rotationSkewY": 0,
-								"scaleX": 1,
-								"scaleY": 1,
-								"skewX": 0,
-								"skewY": 0,
-								"tag": -1,
-								"groupIndex": 0,
-								"colliders": []
-							},
-							"particleFilename": "creator/particle/atom.plist"
-						},
-						"object_type": "Particle",
-						"children": []
-					},
-					{
-						"object": {
-							"node": {
-								"contentSize": {
 									"w": 800,
 									"h": 500
 								},
@@ -501,6 +459,48 @@
 							"sizeMode": "Custom"
 						},
 						"object_type": "Sprite",
+						"children": []
+					},
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 0,
+									"h": 0
+								},
+								"enabled": true,
+								"name": "hallTitleParticlesystem",
+								"anchorPoint": {
+									"x": 0.5,
+									"y": 0.5
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": 387,
+									"y": -246
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"particleFilename": "creator/particle/atom.plist"
+						},
+						"object_type": "Particle",
 						"children": []
 					},
 					{
