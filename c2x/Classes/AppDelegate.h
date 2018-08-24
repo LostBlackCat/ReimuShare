@@ -27,6 +27,7 @@
 
 #include "AppDelegate.h"
 #include "cocos2d.h"
+#include "proj.win32/hallFunction.h"
 
 /**
 @brief    The cocos2d Application.

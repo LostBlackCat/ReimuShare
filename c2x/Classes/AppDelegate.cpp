@@ -23,9 +23,6 @@
  ****************************************************************************/
 
 #include "AppDelegate.h"
-//#include "HelloWorldScene.h"
-#include "reader/CreatorReader.h"
-//#include "proj.win32/hallFunction.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1

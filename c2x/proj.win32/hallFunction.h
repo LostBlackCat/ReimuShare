@@ -8,8 +8,6 @@
 
 #define HALL_DEBUG
 #include <string>
-//#include "cocos2d.h"
-#include "AppDelegate.h"
 #include "reader/CreatorReader.h"
 #include "hallPlayer.h"
 #include "hallTools.h"
@@ -24,14 +22,14 @@ public:
 	Hall();
 	virtual ~Hall();
 	/*
-	Function name:feedPlayerInformation												
-	Description:以数组形式注册玩家信息													
-	Created:180824																			
-	Parameter：HallPlayer：玩家信息数组指针，用于传入玩家信息			
-	Return Code:VOID																			
-	Authro:Hanyuu																				
+	Function name:feedPlayerInformation
+	Description:以数组形式注册玩家信息
+	Created:180824
+	Parameter：HallPlayer：玩家信息数组指针，用于传入玩家信息
+	Return Code:VOID
+	Authro:Hanyuu
 	*/
-	void feedPlayerInformation(HallPlayer *);	
+	void feedPlayerInformation(HallPlayer *);
 	//玩家数量
 	static unsigned playerNumber;
 protected:
