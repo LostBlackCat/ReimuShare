@@ -8,6 +8,7 @@
 
 #define HALL_DEBUG
 #include <string>
+#include <exception>
 #include "reader/CreatorReader.h"
 #include "hallPlayer.h"
 #include "hallTools.h"
@@ -15,11 +16,13 @@
 #include<fstream>
 #endif // HALL_DEBUG
 
+using namespace cocos2d;
+
 //#include "proj.win32/hallFunction.h"
 class Hall
 {
 public:
-	Hall();
+	Hall(Scene *);
 	virtual ~Hall();
 	/*
 	Function name:feedPlayerInformation
@@ -35,5 +38,5 @@ public:
 protected:
 
 private:
-
+	Scene * m_scene;
 };

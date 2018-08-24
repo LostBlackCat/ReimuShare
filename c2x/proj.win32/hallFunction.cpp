@@ -16,13 +16,21 @@
 //玩家数量默认为4，若要改动请对应更改UI
 unsigned Hall::playerNumber = 4;
 
-Hall::Hall()
+Hall::Hall(Scene * scene)
 {
 #ifdef HALL_DEBUG
 	std::fstream debugLog("..\\log\\hall.log", std::fstream::app);
 	debugLog << "\nClass Hall generated.";
 	debugLog.close();
 #endif // HALL_DEBUG
+	if (scene!=nullptr)
+	{
+		m_scene = scene;
+	}
+	else
+	{
+		throw std::exception("Empty scene");
+	}
 }
 
 Hall::~Hall()
@@ -36,20 +44,17 @@ Hall::~Hall()
 
 void Hall::feedPlayerInformation(HallPlayer* hallplayer)
 {
-	creator::CreatorReader * reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
-	cocos2d::Scene * scene = reader->getSceneGraph();
 	std::string strHead = "bleb";
-
 
 	for (unsigned i = 0; i < Hall::playerNumber; i++)
 	{
 
 		std::string strName = strHead + int2String(i);
-		cocos2d::Label * player = (cocos2d::Label *) scene->getChildByName(strName);
+		cocos2d::Label * player = (cocos2d::Label *) m_scene->getChildByName(strName);
 		player->setZOrder(100);
-		player->setSystemFontSize(500);
-		player->setString("I am player " + int2String(i));
-		player->setColor(cocos2d::Color3B(45,34,165));
+		//player->setSystemFontSize(50);
+		player->setString(hallplayer[i].playerName);
+		//player->setColor(cocos2d::Color3B(45,34,165));
 	
 	}
 }

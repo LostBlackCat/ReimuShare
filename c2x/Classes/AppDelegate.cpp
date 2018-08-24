@@ -125,26 +125,26 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	creator::CreatorReader* reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
 	reader->setup();
 	Scene * scene = reader->getSceneGraph();
-	Hall hall;
+	Hall hall(scene);
 
 
 	//creator::CreatorReader * reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
 	//cocos2d::Scene * scene = reader->getSceneGraph();
-	std::string strHead = "bleb";
+	//std::string strHead = "bleb";
 
 
-	for (unsigned i = 0; i < Hall::playerNumber; i++)
-	{
+	//for (unsigned i = 0; i < Hall::playerNumber; i++)
+	//{
 
-		std::string strName = strHead + int2String(i);
-		cocos2d::Label * player = (cocos2d::Label *) scene->getChildByName(strName);
-		player->setZOrder(100);
-		player->setString("player " + int2String(i));
-	}
-	//Test code
+	//	std::string strName = strHead + int2String(i);
+	//	cocos2d::Label * player = (cocos2d::Label *) scene->getChildByName(strName);
+	//	player->setZOrder(100);
+	//	player->setString("player " + int2String(i));
+	//}
+	////Test code
 
-	HallPlayer test[4] = { {"s","s"},{"s","s"},{"s","s"},{"s","s"} };
-
+	HallPlayer test[4] = { {"s","palyer0"},{"s","s1"},{"s","s2"},{"s","s3"} };
+	hall.feedPlayerInformation(test);
     director->runWithScene(scene);
 
     return true;
