@@ -139,9 +139,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 		std::string strName = strHead + int2String(i);
 		cocos2d::Label * player = (cocos2d::Label *) scene->getChildByName(strName);
 		player->setZOrder(100);
-		player->setSystemFontSize(50);
-		player->setString("I am player " + int2String(i));
-		player->setColor(cocos2d::Color3B(45, 34, 165));
+		player->setString("player " + int2String(i));
 	}
 
 	HallPlayer test[4] = { {"s","s"},{"s","s"},{"s","s"},{"s","s"} };
