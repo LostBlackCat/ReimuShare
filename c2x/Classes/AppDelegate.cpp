@@ -41,7 +41,8 @@ using namespace CocosDenshion;
 
 USING_NS_CC;
 
-static cocos2d::Size designResolutionSize = cocos2d::Size(1600, 900);
+static cocos2d::Size designResolutionSize = cocos2d::Size(1920/2,1080/2);
+//static cocos2d::Size designResolutionSize = cocos2d::Size(1600, 900);
 static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 //static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1600,900);
@@ -126,9 +127,27 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	Scene * scene = reader->getSceneGraph();
 	//Hall hall;
 
-	//HallPlayer test[4] = { {"s","s"},{"s","s"},{"s","s"},{"s","s"} };
-	//hall.feedPlayerInformation(test);
 
+	//creator::CreatorReader * reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
+	//cocos2d::Scene * scene = reader->getSceneGraph();
+	std::string strHead = "bleb";
+
+
+	for (unsigned i = 0; i < Hall::playerNumber; i++)
+	{
+
+		std::string strName = strHead + int2String(i);
+		cocos2d::Label * player = (cocos2d::Label *) scene->getChildByName(strName);
+		player->setZOrder(100);
+		player->setSystemFontSize(50);
+		player->setString("I am player " + int2String(i));
+		player->setColor(cocos2d::Color3B(45, 34, 165));
+	}
+
+	HallPlayer test[4] = { {"s","s"},{"s","s"},{"s","s"},{"s","s"} };
+	//hall.feedPlayerInformation(test);
+	//Label * label = (Label *)scene->getChildByName("a");
+	//label->setString("aaaa");
 	//Director::getInstance()->replaceScene(scene);
 	//Size mysize = Director::getInstance()->getVisibleSize();
     // run

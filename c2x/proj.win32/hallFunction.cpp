@@ -38,14 +38,19 @@ void Hall::feedPlayerInformation(HallPlayer* hallplayer)
 {
 	creator::CreatorReader * reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
 	cocos2d::Scene * scene = reader->getSceneGraph();
-	std::string strHead = "player";
+	std::string strHead = "bleb";
 
 
 	for (unsigned i = 0; i < Hall::playerNumber; i++)
 	{
 
 		std::string strName = strHead + int2String(i);
-		cocos2d::Label * player =  (cocos2d::Label *) scene->getChildByName("hallCanvas")->getChildByName(strName);
+		cocos2d::Label * player = (cocos2d::Label *) scene->getChildByName(strName);
+		player->setZOrder(100);
+		player->setSystemFontSize(500);
+		player->setString("I am player " + int2String(i));
+		player->setColor(cocos2d::Color3B(45,34,165));
+	
 	}
 }
 

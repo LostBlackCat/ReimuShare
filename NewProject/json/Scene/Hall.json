@@ -590,55 +590,6 @@
 								},
 								"object_type": "Particle",
 								"children": []
-							},
-							{
-								"object": {
-									"node": {
-										"contentSize": {
-											"w": 250,
-											"h": 40
-										},
-										"enabled": true,
-										"name": "bleb",
-										"anchorPoint": {
-											"x": 0,
-											"y": 0
-										},
-										"cascadeOpacityEnabled": true,
-										"color": {
-											"r": 255,
-											"g": 255,
-											"b": 255
-										},
-										"globalZOrder": 0,
-										"localZOrder": 0,
-										"opacity": 255,
-										"opacityModifyRGB": false,
-										"position": {
-											"x": 125,
-											"y": -20
-										},
-										"rotationSkewX": 0,
-										"rotationSkewY": 0,
-										"scaleX": 1,
-										"scaleY": 1,
-										"skewX": 0,
-										"skewY": 0,
-										"tag": -1,
-										"groupIndex": 0,
-										"colliders": []
-									},
-									"fontSize": 40,
-									"labelText": "Player0",
-									"horizontalAlignment": "Left",
-									"verticalAlignment": "Center",
-									"overflowType": "Shrink",
-									"enableWrap": true,
-									"fontType": "System",
-									"fontName": "arial"
-								},
-								"object_type": "Label",
-								"children": []
 							}
 						]
 					},
@@ -728,55 +679,6 @@
 									"particleFilename": "creator/particle/atom.plist"
 								},
 								"object_type": "Particle",
-								"children": []
-							},
-							{
-								"object": {
-									"node": {
-										"contentSize": {
-											"w": 250,
-											"h": 40
-										},
-										"enabled": true,
-										"name": "bleb",
-										"anchorPoint": {
-											"x": 0,
-											"y": 0
-										},
-										"cascadeOpacityEnabled": true,
-										"color": {
-											"r": 255,
-											"g": 255,
-											"b": 255
-										},
-										"globalZOrder": 0,
-										"localZOrder": 0,
-										"opacity": 255,
-										"opacityModifyRGB": false,
-										"position": {
-											"x": 125,
-											"y": -20
-										},
-										"rotationSkewX": 0,
-										"rotationSkewY": 0,
-										"scaleX": 1,
-										"scaleY": 1,
-										"skewX": 0,
-										"skewY": 0,
-										"tag": -1,
-										"groupIndex": 0,
-										"colliders": []
-									},
-									"fontSize": 40,
-									"labelText": "Player1",
-									"horizontalAlignment": "Left",
-									"verticalAlignment": "Center",
-									"overflowType": "Shrink",
-									"enableWrap": true,
-									"fontType": "System",
-									"fontName": "arial"
-								},
-								"object_type": "Label",
 								"children": []
 							}
 						]
@@ -868,55 +770,6 @@
 								},
 								"object_type": "Particle",
 								"children": []
-							},
-							{
-								"object": {
-									"node": {
-										"contentSize": {
-											"w": 250,
-											"h": 40
-										},
-										"enabled": true,
-										"name": "bleb",
-										"anchorPoint": {
-											"x": 0,
-											"y": 0
-										},
-										"cascadeOpacityEnabled": true,
-										"color": {
-											"r": 255,
-											"g": 255,
-											"b": 255
-										},
-										"globalZOrder": 0,
-										"localZOrder": 0,
-										"opacity": 255,
-										"opacityModifyRGB": false,
-										"position": {
-											"x": 125,
-											"y": -20
-										},
-										"rotationSkewX": 0,
-										"rotationSkewY": 0,
-										"scaleX": 1,
-										"scaleY": 1,
-										"skewX": 0,
-										"skewY": 0,
-										"tag": -1,
-										"groupIndex": 0,
-										"colliders": []
-									},
-									"fontSize": 40,
-									"labelText": "Player2",
-									"horizontalAlignment": "Left",
-									"verticalAlignment": "Center",
-									"overflowType": "Shrink",
-									"enableWrap": true,
-									"fontType": "System",
-									"fontName": "arial"
-								},
-								"object_type": "Label",
-								"children": []
 							}
 						]
 					},
@@ -1007,55 +860,6 @@
 								},
 								"object_type": "Particle",
 								"children": []
-							},
-							{
-								"object": {
-									"node": {
-										"contentSize": {
-											"w": 250,
-											"h": 40
-										},
-										"enabled": true,
-										"name": "bleb",
-										"anchorPoint": {
-											"x": 0,
-											"y": 0.5
-										},
-										"cascadeOpacityEnabled": true,
-										"color": {
-											"r": 255,
-											"g": 255,
-											"b": 255
-										},
-										"globalZOrder": 0,
-										"localZOrder": 0,
-										"opacity": 255,
-										"opacityModifyRGB": false,
-										"position": {
-											"x": 125,
-											"y": 0
-										},
-										"rotationSkewX": 0,
-										"rotationSkewY": 0,
-										"scaleX": 1,
-										"scaleY": 1,
-										"skewX": 0,
-										"skewY": 0,
-										"tag": -1,
-										"groupIndex": 0,
-										"colliders": []
-									},
-									"fontSize": 40,
-									"labelText": "Player3",
-									"horizontalAlignment": "Left",
-									"verticalAlignment": "Center",
-									"overflowType": "Shrink",
-									"enableWrap": true,
-									"fontType": "System",
-									"fontName": "arial"
-								},
-								"object_type": "Label",
-								"children": []
 							}
 						]
 					}
@@ -1065,11 +869,11 @@
 				"object": {
 					"node": {
 						"contentSize": {
-							"w": 0,
-							"h": 0
+							"w": 98,
+							"h": 40
 						},
-						"enabled": true,
-						"name": "particlesystem",
+						"enabled": false,
+						"name": "a",
 						"anchorPoint": {
 							"x": 0.5,
 							"y": 0.5
@@ -1085,7 +889,197 @@
 						"opacity": 255,
 						"opacityModifyRGB": false,
 						"position": {
-							"x": 1437,
+							"x": 610,
+							"y": 405
+						},
+						"rotationSkewX": 0,
+						"rotationSkewY": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"skewX": 0,
+						"skewY": 0,
+						"tag": -1,
+						"groupIndex": 0,
+						"colliders": []
+					},
+					"fontSize": 40,
+					"labelText": "Label",
+					"horizontalAlignment": "Center",
+					"verticalAlignment": "Center",
+					"overflowType": "None",
+					"enableWrap": true,
+					"fontType": "System",
+					"fontName": "arial"
+				},
+				"object_type": "Label",
+				"children": [
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 0,
+									"h": 0
+								},
+								"enabled": true,
+								"name": "particlesystem",
+								"anchorPoint": {
+									"x": 0.5,
+									"y": 0.5
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": 827,
+									"y": -86
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"particleFilename": "creator/particle/atom.plist"
+						},
+						"object_type": "Particle",
+						"children": []
+					}
+				]
+			},
+			{
+				"object": {
+					"node": {
+						"contentSize": {
+							"w": 98,
+							"h": 40
+						},
+						"enabled": true,
+						"name": "bleb0",
+						"anchorPoint": {
+							"x": 0.5,
+							"y": 0.5
+						},
+						"cascadeOpacityEnabled": true,
+						"color": {
+							"r": 255,
+							"g": 255,
+							"b": 255
+						},
+						"globalZOrder": 0,
+						"localZOrder": 0,
+						"opacity": 255,
+						"opacityModifyRGB": false,
+						"position": {
+							"x": 139,
+							"y": 456
+						},
+						"rotationSkewX": 0,
+						"rotationSkewY": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"skewX": 0,
+						"skewY": 0,
+						"tag": -1,
+						"groupIndex": 0,
+						"colliders": []
+					},
+					"fontSize": 40,
+					"labelText": "Label",
+					"horizontalAlignment": "Center",
+					"verticalAlignment": "Center",
+					"overflowType": "None",
+					"enableWrap": true,
+					"fontType": "System",
+					"fontName": "arial"
+				},
+				"object_type": "Label",
+				"children": []
+			},
+			{
+				"object": {
+					"node": {
+						"contentSize": {
+							"w": 98,
+							"h": 40
+						},
+						"enabled": true,
+						"name": "bleb1",
+						"anchorPoint": {
+							"x": 0.5,
+							"y": 0.5
+						},
+						"cascadeOpacityEnabled": true,
+						"color": {
+							"r": 255,
+							"g": 255,
+							"b": 255
+						},
+						"globalZOrder": 0,
+						"localZOrder": 0,
+						"opacity": 255,
+						"opacityModifyRGB": false,
+						"position": {
+							"x": 581,
+							"y": 353
+						},
+						"rotationSkewX": 0,
+						"rotationSkewY": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"skewX": 0,
+						"skewY": 0,
+						"tag": -1,
+						"groupIndex": 0,
+						"colliders": []
+					},
+					"fontSize": 40,
+					"labelText": "Label",
+					"horizontalAlignment": "Center",
+					"verticalAlignment": "Center",
+					"overflowType": "None",
+					"enableWrap": true,
+					"fontType": "System",
+					"fontName": "arial"
+				},
+				"object_type": "Label",
+				"children": []
+			},
+			{
+				"object": {
+					"node": {
+						"contentSize": {
+							"w": 98,
+							"h": 40
+						},
+						"enabled": true,
+						"name": "bleb2",
+						"anchorPoint": {
+							"x": 0.5,
+							"y": 0.5
+						},
+						"cascadeOpacityEnabled": true,
+						"color": {
+							"r": 255,
+							"g": 255,
+							"b": 255
+						},
+						"globalZOrder": 0,
+						"localZOrder": 0,
+						"opacity": 255,
+						"opacityModifyRGB": false,
+						"position": {
+							"x": 392,
 							"y": 319
 						},
 						"rotationSkewX": 0,
@@ -1098,9 +1092,65 @@
 						"groupIndex": 0,
 						"colliders": []
 					},
-					"particleFilename": "creator/particle/atom.plist"
+					"fontSize": 40,
+					"labelText": "Label",
+					"horizontalAlignment": "Center",
+					"verticalAlignment": "Center",
+					"overflowType": "None",
+					"enableWrap": true,
+					"fontType": "System",
+					"fontName": "arial"
 				},
-				"object_type": "Particle",
+				"object_type": "Label",
+				"children": []
+			},
+			{
+				"object": {
+					"node": {
+						"contentSize": {
+							"w": 98,
+							"h": 40
+						},
+						"enabled": true,
+						"name": "bleb3",
+						"anchorPoint": {
+							"x": 0.5,
+							"y": 0.5
+						},
+						"cascadeOpacityEnabled": true,
+						"color": {
+							"r": 255,
+							"g": 255,
+							"b": 255
+						},
+						"globalZOrder": 0,
+						"localZOrder": 0,
+						"opacity": 255,
+						"opacityModifyRGB": false,
+						"position": {
+							"x": 306,
+							"y": 259
+						},
+						"rotationSkewX": 0,
+						"rotationSkewY": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"skewX": 0,
+						"skewY": 0,
+						"tag": -1,
+						"groupIndex": 0,
+						"colliders": []
+					},
+					"fontSize": 40,
+					"labelText": "Label",
+					"horizontalAlignment": "Center",
+					"verticalAlignment": "Center",
+					"overflowType": "None",
+					"enableWrap": true,
+					"fontType": "System",
+					"fontName": "arial"
+				},
+				"object_type": "Label",
 				"children": []
 			}
 		]
