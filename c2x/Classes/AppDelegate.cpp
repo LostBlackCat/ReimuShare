@@ -125,7 +125,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	creator::CreatorReader* reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
 	reader->setup();
 	Scene * scene = reader->getSceneGraph();
-	//Hall hall;
+	Hall hall;
 
 
 	//creator::CreatorReader * reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
@@ -141,14 +141,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
 		player->setZOrder(100);
 		player->setString("player " + int2String(i));
 	}
+	//Test code
 
 	HallPlayer test[4] = { {"s","s"},{"s","s"},{"s","s"},{"s","s"} };
-	//hall.feedPlayerInformation(test);
-	//Label * label = (Label *)scene->getChildByName("a");
-	//label->setString("aaaa");
-	//Director::getInstance()->replaceScene(scene);
-	//Size mysize = Director::getInstance()->getVisibleSize();
-    // run
+
     director->runWithScene(scene);
 
     return true;
