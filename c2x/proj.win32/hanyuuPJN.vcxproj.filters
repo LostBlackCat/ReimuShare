@@ -129,6 +129,9 @@
     <ClCompile Include="testCode.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="hallTools.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -312,6 +315,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="hallPlayer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="hallTools.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

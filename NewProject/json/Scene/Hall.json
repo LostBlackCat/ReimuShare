@@ -32,8 +32,8 @@
 			{
 				"object": {
 					"contentSize": {
-						"w": 1600,
-						"h": 900
+						"w": 1920,
+						"h": 1080
 					},
 					"enabled": true,
 					"name": "hallCanvas",
@@ -52,8 +52,8 @@
 					"opacity": 255,
 					"opacityModifyRGB": false,
 					"position": {
-						"x": 800,
-						"y": 450
+						"x": 960,
+						"y": 540
 					},
 					"rotationSkewX": 0,
 					"rotationSkewY": 0,
@@ -71,14 +71,14 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 1600,
-									"h": 900
+									"w": 1920,
+									"h": 1080
 								},
 								"enabled": true,
 								"name": "hallBackground",
 								"anchorPoint": {
-									"x": 0.5,
-									"y": 0.5
+									"x": 0,
+									"y": 0
 								},
 								"cascadeOpacityEnabled": true,
 								"color": {
@@ -91,8 +91,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": 0,
-									"y": 0
+									"x": -960,
+									"y": -540
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -167,7 +167,7 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 800,
+									"w": 960,
 									"h": 500
 								},
 								"enabled": true,
@@ -187,8 +187,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -800,
-									"y": -450
+									"x": -960,
+									"y": -540
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -213,7 +213,7 @@
 								"object": {
 									"node": {
 										"contentSize": {
-											"w": 700,
+											"w": 860,
 											"h": 40
 										},
 										"enabled": true,
@@ -233,7 +233,7 @@
 										"opacity": 63,
 										"opacityModifyRGB": false,
 										"position": {
-											"x": 350,
+											"x": 430,
 											"y": 20
 										},
 										"rotationSkewX": 0,
@@ -340,7 +340,7 @@
 										"opacity": 255,
 										"opacityModifyRGB": false,
 										"position": {
-											"x": 800,
+											"x": 960,
 											"y": 0
 										},
 										"rotationSkewX": 0,
@@ -418,8 +418,8 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 800,
-									"h": 900
+									"w": 960,
+									"h": 1080
 								},
 								"enabled": true,
 								"name": "hallMap",
@@ -438,7 +438,7 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": 400,
+									"x": 480,
 									"y": 0
 								},
 								"rotationSkewX": 0,
@@ -527,8 +527,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -705,
-									"y": 330
+									"x": -865,
+									"y": 411
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -666,8 +666,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -705,
-									"y": 105
+									"x": -865,
+									"y": 141
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -805,8 +805,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -325,
-									"y": 330
+									"x": -485,
+									"y": 411
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -944,8 +944,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -325,
-									"y": 105
+									"x": -485,
+									"y": 141
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -1106,11 +1106,11 @@
 		]
 	},
 	"designResolution": {
-		"w": 1600,
-		"h": 900
+		"w": 1920,
+		"h": 1080
 	},
-	"resolutionFitWidth": true,
-	"resolutionFitHeight": true,
+	"resolutionFitWidth": false,
+	"resolutionFitHeight": false,
 	"spriteFrames": [
 		{
 			"name": "picture/background.png",

@@ -152,6 +152,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="hallFunction.cpp" />
+    <ClCompile Include="hallTools.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="reader\animation\AnimateClip.cpp" />
     <ClCompile Include="reader\animation\AnimationClip.cpp" />
@@ -193,6 +194,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="hallFunction.h" />
     <ClInclude Include="hallPlayer.h" />
+    <ClInclude Include="hallTools.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="reader\animation\AnimateClip.h" />
     <ClInclude Include="reader\animation\AnimationClip.h" />
