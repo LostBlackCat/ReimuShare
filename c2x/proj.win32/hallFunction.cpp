@@ -7,6 +7,8 @@
 #include "hallFunction.h"
 #include "reader/CreatorReader.h"
 #include <string>
+#include <sstream>
+#include <stdlib.h>
 
 #include "AppDelegate.h"
 //#include "HelloWorldScene.h"
@@ -20,9 +22,9 @@ unsigned Hall::playerNumber = 4;
 Hall::Hall()
 {
 #ifdef HALL_DEBUG
-	std::fstream debugLog("..\\log\\hall.log",std::fstream::app);
+	std::fstream debugLog("..\\log\\hall.log", std::fstream::app);
 	debugLog << "\nClass Hall generated.";
-	debugLog.close();	
+	debugLog.close();
 #endif // HALL_DEBUG
 }
 Hall::~Hall()
@@ -37,18 +39,19 @@ void Hall::feedPlayerInformation(HallPlayer*)
 {
 	creator::CreatorReader * reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
 	cocos2d::Scene * scene = reader->getSceneGraph();
-	std::string a = "a";
-	std::string b = "b";
-	std::string c = a + b;
+	std::string strHead = "player";
+
 
 	for (unsigned i = 0; i < Hall::playerNumber; i++)
 	{
-		//auto  player = scene->getChildByName("hallCanvas")->getChildByName(std::string("player")+std::string(static_cast<char>(i)));
-	//	if (player==nullptr)
-	//	{
-	//		throw int(1);
-	//	}
-	//}
+		std::string strNo = std::string(i);
+		std::string strName = strHead + strNo;
+		cocos2d::Label * player =  (cocos2d::Label *) scene->getChildByName("hallCanvas")->getChildByName(strName);
+		if (player == nullptr)
+		{
+			throw int(1);
+		}
 	}
+
 
 }
