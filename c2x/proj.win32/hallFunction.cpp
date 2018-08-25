@@ -5,14 +5,6 @@
 
 #include "hallFunction.h"
 
-//#include "reader/CreatorReader.h"
-//#include <string>
-//#include "AppDelegate.h"
-//#include "hallTools.h"
-//#include "reader/CreatorReader.h"
-//#include "proj.win32/hallFunction.h"
-
-
 //玩家数量默认为4，若要改动请对应更改UI
 unsigned Hall::playerNumber = 4;
 
