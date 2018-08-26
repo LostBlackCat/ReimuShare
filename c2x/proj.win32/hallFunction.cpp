@@ -51,8 +51,9 @@ void Hall::feedPlayerInformation(HallPlayer* hallplayer)
 	}
 }
 
-void Hall::sendMessage(std::string) 
+bool Hall::sendMessage(std::string) const
 {
 	//TODO...
-	return;
+	//ERROR:Can't touch Editbox class.
+	return true;
 }

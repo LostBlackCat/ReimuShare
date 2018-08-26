@@ -42,7 +42,7 @@ Parameter:String:待发送的信息变量
 Return Code:bool:发送成功判断
 Author:Hanyuu
 */
-	void sendMessage(std::string);
+	bool sendMessage(std::string) const;
 	//玩家数量
 	static unsigned playerNumber;
 protected:
