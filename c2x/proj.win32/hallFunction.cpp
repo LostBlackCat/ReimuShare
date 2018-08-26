@@ -51,3 +51,8 @@ void Hall::feedPlayerInformation(HallPlayer* hallplayer)
 	}
 }
 
+void Hall::sendMessage(std::string) 
+{
+	//TODO...
+	return;
+}
