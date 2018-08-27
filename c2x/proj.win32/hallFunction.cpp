@@ -18,11 +18,15 @@ Hall::Hall(Scene * scene)
 	if (scene!=nullptr)
 	{
 		m_scene = scene;
+		//m_sendButton = (ui::Button*) m_scene->getChildByName("button");
+		m_sendButton = (ui::Button*) m_scene->getChildByName("hallCanvas")->getChildByName("shadowVertcial")->getChildByName("hallChatMessageSendButton");
+		//初始化聊天记录框
 		m_record = cocos2d::ui::Text::create("Text examples【用户示例】", "..\\font\\gameFont.ttf", 32);
 		m_record->setFontSize(30.0f);
 		m_record->setAnchorPoint(Vec2(0, 0));
 		m_record->setPosition(Vec2(20.0f, 50.0f));
 		m_scene->addChild(m_record);
+
 		hanyuuLog("Object Hall generated.");
 	}
 	else

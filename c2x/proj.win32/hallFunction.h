@@ -47,5 +47,5 @@ private:
 	Scene * m_scene;
 	Size m_size;
 	cocos2d::ui::Text * m_record;
-
+	cocos2d::ui::Button * m_sendButton;
 };
