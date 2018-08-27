@@ -46,7 +46,7 @@ Author:Hanyuu
 	//Íæ¼ÒÊýÁ¿
 	static unsigned playerNumber;
 protected:
-
 private:
 	Scene * m_scene;
+	cocos2d::CCTextFieldDelegate * m_CCTFDChattingRecord;
 };
