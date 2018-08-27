@@ -16,3 +16,8 @@ Return code:string 返回string结果
 Author:Hanyuu
 */
 std::string int2String(int i);
+/*
+Function name:log
+Description:输出文件到日志
+Created:18/
+*/

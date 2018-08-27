@@ -8,6 +8,9 @@
 //玩家数量默认为4，若要改动请对应更改UI
 unsigned Hall::playerNumber = 4;
 
+//互斥锁
+boost::mutex lock;
+
 Hall::Hall(Scene * scene)
 {
 #ifdef HALL_DEBUG
@@ -15,9 +18,16 @@ Hall::Hall(Scene * scene)
 	debugLog << "\nClass Hall generated.";
 	debugLog.close();
 #endif // HALL_DEBUG
+	m_size = Director::getInstance()->getVisibleSize();
+	//m_scene->addChild((cocos2d::Node*)m_CCTFDChattingRecord);
 	if (scene!=nullptr)
 	{
 		m_scene = scene;
+		m_record = cocos2d::ui::Text::create("Text examples【用户示例】", "..\\font\\gameFont.ttf", 32);
+		m_record->setFontSize(30.0f);
+		m_record->setAnchorPoint(Vec2(0, 0));
+		m_record->setPosition(Vec2(20.0f, 50.0f));
+		m_scene->addChild(m_record);
 	}
 	else
 	{
@@ -55,5 +65,6 @@ bool Hall::sendMessage(std::string) const
 {
 	//TODO...
 	//ERROR:Can't touch Editbox class.
+	Label* result =(Label*) m_scene->getChildByName("");
 	return true;
 }

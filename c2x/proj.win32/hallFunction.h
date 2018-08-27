@@ -15,6 +15,7 @@
 #ifdef HALL_DEBUG
 #include<fstream>
 #endif // HALL_DEBUG
+#include <boost/thread/thread.hpp>
 
 using namespace cocos2d;
 
@@ -48,5 +49,7 @@ Author:Hanyuu
 protected:
 private:
 	Scene * m_scene;
-	cocos2d::CCTextFieldDelegate * m_CCTFDChattingRecord;
+	Size m_size;
+	cocos2d::ui::Text * m_record;
+
 };
