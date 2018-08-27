@@ -6,6 +6,7 @@
 
 #include<string>
 #include<sstream>
+#include<fstream>
 
 /*
 Function name:int2String
@@ -18,6 +19,10 @@ Author:Hanyuu
 std::string int2String(int i);
 /*
 Function name:log
-Description:输出文件到日志
-Created:18/
+Description:输出log到日志
+Created:18/0826
+Paremeter:String:要打印的log信息
+Return code:VOID
+Author:Hanyuu
 */
+void hanyuuLog(std::string);

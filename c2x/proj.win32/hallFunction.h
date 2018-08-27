@@ -6,15 +6,11 @@
 //Commit:
 //	提供控制大厅的类
 
-#define HALL_DEBUG
 #include <string>
 #include <exception>
 #include "reader/CreatorReader.h"
 #include "hallPlayer.h"
 #include "hallTools.h"
-#ifdef HALL_DEBUG
-#include<fstream>
-#endif // HALL_DEBUG
 #include <boost/thread/thread.hpp>
 
 using namespace cocos2d;

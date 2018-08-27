@@ -13,11 +13,6 @@ boost::mutex lock;
 
 Hall::Hall(Scene * scene)
 {
-#ifdef HALL_DEBUG
-	std::fstream debugLog("..\\log\\hall.log", std::fstream::app);
-	debugLog << "\nClass Hall generated.";
-	debugLog.close();
-#endif // HALL_DEBUG
 	m_size = Director::getInstance()->getVisibleSize();
 	//m_scene->addChild((cocos2d::Node*)m_CCTFDChattingRecord);
 	if (scene!=nullptr)
@@ -28,20 +23,18 @@ Hall::Hall(Scene * scene)
 		m_record->setAnchorPoint(Vec2(0, 0));
 		m_record->setPosition(Vec2(20.0f, 50.0f));
 		m_scene->addChild(m_record);
+		hanyuuLog("Object Hall generated.");
 	}
 	else
 	{
+		hanyuuLog("Class Hall can't touch scene");
 		throw std::exception("Empty scene");
 	}
 }
 
 Hall::~Hall()
 {
-#ifdef HALL_DEBUG
-	std::fstream debugLog("..\\log\\hall.log", std::fstream::app);
-	debugLog << "\nClass Hall destoried.";
-	debugLog.close();
-#endif // HALL_DEBUG
+	hanyuuLog("Object Hall destroyed.");
 }
 
 void Hall::feedPlayerInformation(HallPlayer* hallplayer)
