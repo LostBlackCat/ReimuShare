@@ -25,7 +25,7 @@
 #ifndef  _APP_DELEGATE_H_
 #define  _APP_DELEGATE_H_
 
-#include "AppDelegate.h"
+
 #include "cocos2d.h"
 #include "proj.win32/hallFunction.h"
 

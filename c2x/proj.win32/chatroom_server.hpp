@@ -1,4 +1,7 @@
 #pragma once
+#ifndef QEQEQ
+#define QEQEQ
+
 #include<iostream>
 using std::cout;
 using std::endl;
@@ -189,3 +192,5 @@ ChatroomServer* server_start_qe(boost::function<void(boost::shared_ptr<ChatMessa
 	io.run();
 	return server;
 }
+
+#endif // !QEQEQ

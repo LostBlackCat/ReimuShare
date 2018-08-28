@@ -1,4 +1,6 @@
 #pragma once
+#ifndef HALL_FUNCTION
+#define HALL_FUNCTION
 //hallFunction.h
 
 //hallFunction.cpp
@@ -14,7 +16,7 @@
 #include <boost/thread/thread.hpp>
 #include"ui/CocosGUI.h"
 #include"ui/UIWidget.h"
-#include"chatroom_server.hpp"
+//#include"chatroom_server.hpp"
 
 using namespace cocos2d;
 
@@ -64,3 +66,5 @@ private:
 	cocos2d::ui::Button * m_sendButton;
 	cocos2d::ui::TextField * m_editBox;
 };
+
+#endif	
