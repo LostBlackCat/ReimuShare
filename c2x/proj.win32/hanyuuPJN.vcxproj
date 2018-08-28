@@ -150,6 +150,8 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\chatroom\chatroom_client.cpp" />
+    <ClCompile Include="..\chatroom\chatroom_server.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="hallFunction.cpp" />
     <ClCompile Include="hallTools.cpp" />
@@ -191,6 +193,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="testCode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\chatroom\chat_message.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="hallFunction.h" />
     <ClInclude Include="hallPlayer.h" />

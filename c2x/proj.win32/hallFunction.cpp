@@ -27,6 +27,7 @@ Hall::Hall(Scene * scene)
 		m_sendButton->setTitleFontSize(30);
 		m_sendButton->addTouchEventListener([&](Ref* sneder, ui::Widget::TouchEventType type)
 		{
+			std::string editMessage = getEditMessage();
 			switch (type)
 			{
 			case cocos2d::ui::Widget::TouchEventType::BEGAN:
@@ -36,8 +37,7 @@ Hall::Hall(Scene * scene)
 				hanyuuLog("Send button touch moved.");
 				break;
 			case cocos2d::ui::Widget::TouchEventType::ENDED:
-			
-				sendChatMessage("Test message");
+				sendChatMessage(getEditMessage());
 				hanyuuLog("Send button touch ended.");
 				break;
 			case cocos2d::ui::Widget::TouchEventType::CANCELED:
@@ -62,9 +62,10 @@ Hall::Hall(Scene * scene)
 		m_editBox->setAnchorPoint(Vec2(0, 0));
 		m_editBox->setPosition(Vec2(20.0f, 10.0f));
 		m_editBox->setMaxLength(20);
+		std::string a = m_editBox->getStringValue();
 		m_scene->addChild(m_editBox);
 
-		hanyuuLog("Object Hall generated.");
+		hanyuuLog("-**Start log**-\nObject Hall generated.");
 	}
 	else
 	{
@@ -75,7 +76,7 @@ Hall::Hall(Scene * scene)
 
 Hall::~Hall()
 {	
-	hanyuuLog("Object Hall destroyed.");
+	hanyuuLog("Object Hall destroyed.\n-**End log**-\n");
 }
 
 void Hall::feedPlayerInformation(HallPlayer* hallplayer)
@@ -104,5 +105,13 @@ bool Hall::sendChatMessage(std::string strMessage) const
 
 std::string Hall::getEditMessage() const
 {
-	return m_editBox->getStringValue();
+	//hanyuuLog("getRditBoxMessage£º" + m_editBox->getStringValue());
+	if (m_editBox)
+	{
+		return m_editBox->getString();
+	}
+	else
+	{
+		return std::string("No message");
+	}
 }

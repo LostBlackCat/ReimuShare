@@ -16,12 +16,12 @@ std::string int2String(int i)
 	return strNo;
 }
 
-std::fstream debugLog("..\\log\\hall.log", std::fstream::app);
+//std::fstream debugLog("..\\log\\hall.log", std::fstream::app);
 void hanyuuLog(std::string logInf)
 {
 #ifdef DEBUG
-	//std::fstream debugLog("..\\log\\hall.log", std::fstream::app);
-	debugLog << "\n" << logInf;
-	//debugLog.close();
+	std::fstream debugLog("..\\log\\hall.log", std::fstream::app);
+	debugLog << logInf << "\n";
+	debugLog.close();
 #endif // DEBUG
 }

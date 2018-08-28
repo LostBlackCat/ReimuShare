@@ -125,7 +125,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	creator::CreatorReader* reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
 	reader->setup();
 	Scene * scene = reader->getSceneGraph();
-	Hall hall(scene);
+	static Hall hall(scene);
 
 
 	//creator::CreatorReader * reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
