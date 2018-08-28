@@ -36,6 +36,8 @@ Hall::Hall(Scene * scene)
 				hanyuuLog("Send button touch moved.");
 				break;
 			case cocos2d::ui::Widget::TouchEventType::ENDED:
+			
+				sendChatMessage("Test message");
 				hanyuuLog("Send button touch ended.");
 				break;
 			case cocos2d::ui::Widget::TouchEventType::CANCELED:
@@ -56,6 +58,7 @@ Hall::Hall(Scene * scene)
 		//初始化信息输入窗口
 		m_editBox = cocos2d::ui::TextField::create("Click here and input message", "..\\font\\gameFont.ttf", 32);
 		m_editBox->setFontSize(30.0f);
+		m_editBox->setPlaceHolder("Click here and input message");
 		m_editBox->setAnchorPoint(Vec2(0, 0));
 		m_editBox->setPosition(Vec2(20.0f, 10.0f));
 		m_editBox->setMaxLength(20);
@@ -92,10 +95,14 @@ void Hall::feedPlayerInformation(HallPlayer* hallplayer)
 	}
 }
 
-bool Hall::sendMessage(std::string) const
+bool Hall::sendChatMessage(std::string strMessage) const
 {
-	//TODO...
-	//ERROR:Can't touch Editbox class.
-	Label* result = (Label*)m_scene->getChildByName("");
+	//strMessage = m_editBox->getInsertText();
+	hanyuuLog(strMessage);
 	return true;
+}
+
+std::string Hall::getEditMessage() const
+{
+	return m_editBox->getStringValue();
 }

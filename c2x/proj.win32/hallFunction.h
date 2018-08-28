@@ -41,7 +41,18 @@ public:
 	Return Code:bool:发送成功判断
 	Author:Hanyuu
 	*/
-	bool sendMessage(std::string) const;
+	bool sendChatMessage(std::string) const;
+
+	/*
+	Function name:getEditMessage
+	Description:获取信息编辑框中文本
+	Created:180828
+	Parameter:VOID
+	Return:String:返回的文本
+	Author:Hanyuu
+	*/
+	std::string getEditMessage() const;
+
 	//玩家数量
 	static unsigned playerNumber;
 protected:
