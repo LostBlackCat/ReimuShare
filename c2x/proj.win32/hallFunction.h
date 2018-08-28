@@ -14,6 +14,7 @@
 #include <boost/thread/thread.hpp>
 #include"ui/CocosGUI.h"
 #include"ui/UIWidget.h"
+#include"chatroom_server.hpp"
 
 using namespace cocos2d;
 

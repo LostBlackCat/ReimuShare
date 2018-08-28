@@ -332,6 +332,12 @@
     <ClInclude Include="..\chatroom\chat_message.h">
       <Filter>chatRoom</Filter>
     </ClInclude>
+    <ClInclude Include="chatroom_server.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="chat_message.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
