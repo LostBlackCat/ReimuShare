@@ -50,5 +50,5 @@ private:
 	Size m_size;
 	cocos2d::ui::Text * m_record;
 	cocos2d::ui::Button * m_sendButton;
-	//cocos2d::ui::Text * m_editBox;
+	cocos2d::ui::TextField * m_editBox;
 };

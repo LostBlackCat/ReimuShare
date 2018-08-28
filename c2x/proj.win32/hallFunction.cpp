@@ -51,18 +51,15 @@ Hall::Hall(Scene * scene)
 		m_record->setFontSize(30.0f);
 		m_record->setAnchorPoint(Vec2(0, 0));
 		m_record->setPosition(Vec2(20.0f, 50.0f));
-		m_scene->addChild(m_record);
+		m_scene->addChild(m_record);	
 		
-
 		//初始化信息输入窗口
-		//m_editBox = ui::Text::create("Input your message here", "Arial", 30);
-		//m_editBox->setAnchorPoint(Vec2(0, 0));
-		//m_editBox->setPosition(Vec2(50.0f, 100.0f));
-		//m_editBox->setVisible(false);
-		////m_editBox->setMaxLength(20);
-		//m_editBox->setColor(Color3B(100, 46, 240));
-		//m_editBox->setZOrder(999);
-		//m_scene->addChild(m_editBox);
+		m_editBox = cocos2d::ui::TextField::create("Click here and input message", "..\\font\\gameFont.ttf", 32);
+		m_editBox->setFontSize(30.0f);
+		m_editBox->setAnchorPoint(Vec2(0, 0));
+		m_editBox->setPosition(Vec2(20.0f, 10.0f));
+		m_editBox->setMaxLength(20);
+		m_scene->addChild(m_editBox);
 
 		hanyuuLog("Object Hall generated.");
 	}
