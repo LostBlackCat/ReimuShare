@@ -12,6 +12,8 @@
 #include "hallPlayer.h"
 #include "hallTools.h"
 #include <boost/thread/thread.hpp>
+#include"ui/CocosGUI.h"
+#include"ui/UIWidget.h"
 
 using namespace cocos2d;
 
@@ -48,4 +50,5 @@ private:
 	Size m_size;
 	cocos2d::ui::Text * m_record;
 	cocos2d::ui::Button * m_sendButton;
+	//cocos2d::ui::Text * m_editBox;
 };

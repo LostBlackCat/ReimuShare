@@ -216,7 +216,7 @@
 											"w": 860,
 											"h": 40
 										},
-										"enabled": true,
+										"enabled": false,
 										"name": "hallMessageEdit",
 										"anchorPoint": {
 											"x": 0.5,
@@ -233,8 +233,8 @@
 										"opacity": 63,
 										"opacityModifyRGB": false,
 										"position": {
-											"x": 430,
-											"y": 20
+											"x": 693,
+											"y": 432
 										},
 										"rotationSkewX": 0,
 										"rotationSkewY": 0,
@@ -914,7 +914,7 @@
 				"object": {
 					"node": {
 						"contentSize": {
-							"w": 148,
+							"w": 98,
 							"h": 40
 						},
 						"enabled": true,
@@ -949,9 +949,9 @@
 					},
 					"fontSize": 40,
 					"labelText": "Label",
-					"horizontalAlignment": "Left",
+					"horizontalAlignment": "Center",
 					"verticalAlignment": "Center",
-					"overflowType": "Shrink",
+					"overflowType": "None",
 					"enableWrap": true,
 					"fontType": "System",
 					"fontName": "arial"
