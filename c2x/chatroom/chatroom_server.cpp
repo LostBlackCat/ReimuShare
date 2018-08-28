@@ -152,7 +152,7 @@ private:
 	}
 };
 
-void message_listener(boost::shared_ptr<ChatMessage> mp)
+void netCallMessageListener(boost::shared_ptr<ChatMessage> mp)
 {
 	cout << "[player]\t\t[message]" << endl;
 	cout << mp->playerName<<"\t\t"<< mp->message << endl;
@@ -162,7 +162,7 @@ void netCallMain()
 {
 	boost::asio::io_service io;
 	ChatroomServer server(io);
-	server.set_on_recieve(message_listener);
+	server.set_on_recieve(netCallMessageListener);
 	server.start_accept();
 	io.run();
 }
