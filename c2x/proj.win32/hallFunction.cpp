@@ -15,7 +15,7 @@ Hall::Hall(Scene * scene)
 {
 	m_size = Director::getInstance()->getVisibleSize();
 	//m_scene->addChild((cocos2d::Node*)m_CCTFDChattingRecord);
-	if (scene!=nullptr)
+	if (scene != nullptr)
 	{
 		m_scene = scene;
 		//m_sendButton = (ui::Button*) m_scene->getChildByName("button");
@@ -54,7 +54,7 @@ void Hall::feedPlayerInformation(HallPlayer* hallplayer)
 		//player->setSystemFontSize(50);
 		player->setString(hallplayer[i].playerName);
 		//player->setColor(cocos2d::Color3B(45,34,165));
-	
+
 	}
 }
 
@@ -62,6 +62,6 @@ bool Hall::sendMessage(std::string) const
 {
 	//TODO...
 	//ERROR:Can't touch Editbox class.
-	Label* result =(Label*) m_scene->getChildByName("");
+	Label* result = (Label*)m_scene->getChildByName("");
 	return true;
 }

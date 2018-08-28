@@ -32,13 +32,13 @@ public:
 	void feedPlayerInformation(HallPlayer *);
 
 	/*
-Function name:sendMessage
-Description:发送聊天信息
-Created:180826
-Parameter:String:待发送的信息变量
-Return Code:bool:发送成功判断
-Author:Hanyuu
-*/
+	Function name:sendMessage
+	Description:发送聊天信息
+	Created:180826
+	Parameter:String:待发送的信息变量
+	Return Code:bool:发送成功判断
+	Author:Hanyuu
+	*/
 	bool sendMessage(std::string) const;
 	//玩家数量
 	static unsigned playerNumber;
