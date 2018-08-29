@@ -1,6 +1,6 @@
 #pragma once
-#ifndef HALL_FUNCTION
-#define HALL_FUNCTION
+//#ifndef HALL_FUNCTION
+//#define HALL_FUNCTION
 //hallFunction.h
 
 //hallFunction.cpp
@@ -66,6 +66,12 @@ public:
 	*/
 	void clearEditBox();
 
+	/*
+	Function name:addMessageRecord
+	Description:添加新聊天记录
+
+	*/
+
 	//玩家数量
 	static unsigned playerNumber;
 protected:
@@ -75,6 +81,7 @@ private:
 	cocos2d::ui::Text * m_record;
 	cocos2d::ui::Button * m_sendButton;
 	cocos2d::ui::TextField * m_editBox;
+	std::string m_chatRecord;
 };
 
-#endif	
+//#endif

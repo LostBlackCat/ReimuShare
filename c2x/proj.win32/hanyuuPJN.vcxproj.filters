@@ -13,6 +13,9 @@
     <Filter Include="reader">
       <UniqueIdentifier>{60154cdf-7a6f-433b-83a8-1fe8fd1efd3f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="chat">
+      <UniqueIdentifier>{75c97781-d928-41b6-8892-b1a7736a2e00}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -132,6 +135,10 @@
     <ClCompile Include="hallTools.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="chatroom_client.cpp" />
+    <ClCompile Include="chatroom_server.cpp" />
+    <ClCompile Include="client_main_func.cpp" />
+    <ClCompile Include="server_main_func.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -326,6 +333,9 @@
     <ClInclude Include="chat_message.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="chatroom_client.h" />
+    <ClInclude Include="chatroom_client.hpp" />
+    <ClInclude Include="chatroom_server.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">

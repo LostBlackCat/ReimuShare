@@ -5,6 +5,9 @@
 
 #include "hallFunction.h"
 
+#include"chatroom_client.h"
+
+
 
 //玩家数量默认为4，若要改动请对应更改UI
 unsigned Hall::playerNumber = 4;
@@ -14,6 +17,9 @@ boost::mutex lock;
 
 Hall::Hall(Scene * scene)
 {
+		client_start("127.0.0.1", client_message_listener);
+		client_start("127.0.0.1", client_message_listener);
+
 	m_size = Director::getInstance()->getVisibleSize();
 	//m_scene->addChild((cocos2d::Node*)m_CCTFDChattingRecord);
 	if (scene != nullptr)
