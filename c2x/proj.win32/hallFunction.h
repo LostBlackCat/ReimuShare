@@ -118,7 +118,7 @@ public:
 protected:
 private:
 	std::string	m_playerName[playerNumber];
-	bool m_isHost[playerNumber] = { false,false,false,false };
+	bool m_isHost[playerNumber] = {true,false,false,false };
 	unsigned m_myPlayerNumber = 0;
 	Scene * m_scene;
 	Size m_size;

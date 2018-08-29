@@ -201,9 +201,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="chatroom_client.h" />
-    <ClInclude Include="chatroom_client.hpp" />
     <ClInclude Include="chatroom_server.h" />
-    <ClInclude Include="chatroom_server.hpp" />
     <ClInclude Include="chat_message.h" />
     <ClInclude Include="hallFunction.h" />
     <ClInclude Include="hallPlayer.h" />

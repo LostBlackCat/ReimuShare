@@ -14,14 +14,14 @@ bool  playerIsHost;
 
 //»¥³âËø
 boost::mutex lock;
-ChatroomServer * ptr;
-ChatroomClient * cptr;
+ChatroomServer * ptr = nullptr;
+ChatroomClient * cptr = nullptr;
 Hall::Hall(Scene * scene)
 {
-	playerIsHost = 1;
+	playerIsHost = isHost();
 	if (playerIsHost) 
 	{
-		boost::thread postThread(client_start, server_message_listener, ptr);
+		boost::thread postThread(server_start_qe, server_message_listener, ptr);
 	}
 	else
 	{
@@ -185,6 +185,7 @@ void  clientPostMessage(std::string strMessage, std::string userName)
 	if (playerIsHost)
 	{
 		ptr->post(CMMessageFrame);
+		
 	}
 	else
 	{
