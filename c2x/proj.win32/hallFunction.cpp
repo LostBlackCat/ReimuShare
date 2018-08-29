@@ -9,17 +9,14 @@
 
 
 
-//玩家数量默认为4，若要改动请对应更改UI
-unsigned Hall::playerNumber = 4;
+////玩家数量默认为4，若要改动请对应更改UI
+//unsigned Hall::playerNumber = 4;
 
 //互斥锁
 boost::mutex lock;
 
 Hall::Hall(Scene * scene)
 {
-		client_start("127.0.0.1", client_message_listener);
-		client_start("127.0.0.1", client_message_listener);
-
 	m_size = Director::getInstance()->getVisibleSize();
 	//m_scene->addChild((cocos2d::Node*)m_CCTFDChattingRecord);
 	if (scene != nullptr)
@@ -44,6 +41,7 @@ Hall::Hall(Scene * scene)
 				break;
 			case cocos2d::ui::Widget::TouchEventType::ENDED:
 				sendChatMessage(getEditMessage());
+				addMessageRecord(getEditMessage());
 				clearEditBox();
 				hanyuuLog("Send button touch ended.");
 				break;
@@ -97,6 +95,7 @@ void Hall::feedPlayerInformation(HallPlayer* hallplayer)
 		cocos2d::Label * player = (cocos2d::Label *) m_scene->getChildByName(strName);
 		player->setZOrder(100);
 		//player->setSystemFontSize(50);
+		m_playerName[i] = hallplayer[i].playerName;
 		player->setString(hallplayer[i].playerName);
 		//player->setColor(cocos2d::Color3B(45,34,165));
 
@@ -128,4 +127,10 @@ void Hall::clearEditBox()
 	{
 		m_editBox->setString("");
 	}
+}
+
+void Hall::addMessageRecord(std::string str)
+{
+	m_chatRecord = m_chatRecord + "[ "+m_playerName[m_myPlayerNumber]+" ] : " + str + "\n";
+	m_record->setString(m_chatRecord);
 }
