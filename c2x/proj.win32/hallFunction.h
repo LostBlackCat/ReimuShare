@@ -16,6 +16,8 @@
 #include <boost/thread/thread.hpp>
 #include"ui/CocosGUI.h"
 #include"ui/UIWidget.h"
+#include "chatroom_server.h"
+#include"chatroom_client.h"
 //#include"chatroom_server.hpp"
 
 using namespace cocos2d;
@@ -24,6 +26,8 @@ using namespace cocos2d;
 class Hall
 {
 public:
+	//玩家数量
+	const static unsigned playerNumber = 4;
 	Hall(Scene *);
 	virtual ~Hall();
 	/*
@@ -70,29 +74,52 @@ public:
 	Function name:addMessageRecord
 	Description:添加新聊天记录
 	Created:20180829
-	Parameter:string:要上传的信息
+	Parameter:
+		string:要上传的信息
+		string:要上传的信息，string:用户名
 	Return:VOID
 	Author:Hanyuu
 	*/
 	void addMessageRecord(std::string);
+	void addMessageRecord(std::string, std::string);
 
 	/*
-	Function name:connectMessage
-	Description:通讯线程
+	Function name:isHost
+	Description:判断是否是Host
 	Created:20180829
 	Parameter:VOID
-	Return:VOID
-	Author:Hanyuu 
+	Return:bool:返回是否是Host
+	Author:Hanyuu
 	*/
-	void connectMessage();
+	bool isHost() const;
 
-	//玩家数量
-	const static unsigned playerNumber = 4;
+	/*
+	Function name:getUserName
+	Description:返回当前用户名
+	Created:20180829
+	Parameter:VOID
+	Return:string:用户名字符串
+	Author:Hanyuu
+	*/
+	std::string getUserName() const;
+
+
+	///*
+	//Function name:connectMessage
+	//Description:通讯线程
+	//Created:20180829
+	//Parameter:VOID
+	//Return:VOID
+	//Author:Hanyuu 
+	//*/
+	//void connectMessage();
+
+
 protected:
 private:
 	std::string	m_playerName[playerNumber];
 	bool m_isHost[playerNumber] = { false,false,false,false };
-	unsigned m_myPlayerNumber=0;
+	unsigned m_myPlayerNumber = 0;
 	Scene * m_scene;
 	Size m_size;
 	cocos2d::ui::Text * m_record;
