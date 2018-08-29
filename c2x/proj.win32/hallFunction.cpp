@@ -38,6 +38,7 @@ Hall::Hall(Scene * scene)
 				break;
 			case cocos2d::ui::Widget::TouchEventType::ENDED:
 				sendChatMessage(getEditMessage());
+				clearEditBox();
 				hanyuuLog("Send button touch ended.");
 				break;
 			case cocos2d::ui::Widget::TouchEventType::CANCELED:
@@ -105,7 +106,6 @@ bool Hall::sendChatMessage(std::string strMessage) const
 
 std::string Hall::getEditMessage() const
 {
-	//hanyuuLog("getRditBoxMessage£º" + m_editBox->getStringValue());
 	if (m_editBox)
 	{
 		return m_editBox->getString();
@@ -113,5 +113,13 @@ std::string Hall::getEditMessage() const
 	else
 	{
 		return std::string("No message");
+	}
+}
+
+void Hall::clearEditBox()
+{
+	if (m_editBox)
+	{
+		m_editBox->setString("");
 	}
 }

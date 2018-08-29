@@ -56,6 +56,16 @@ public:
 	*/
 	std::string getEditMessage() const;
 
+	/*
+	Function name:clearEditBox
+	Description:清除信息编辑框中的文本 
+	Created:20180829
+	Parameter:VOID
+	Return:VOID
+	Author:Hanyuu
+	*/
+	void clearEditBox();
+
 	//玩家数量
 	static unsigned playerNumber;
 protected:

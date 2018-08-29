@@ -150,12 +150,6 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\chatroom\chatroom_client.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\chatroom\chatroom_server.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="hallFunction.cpp" />
     <ClCompile Include="hallTools.cpp" />
@@ -197,9 +191,6 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="testCode.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\chatroom\chat_message.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="chatroom_server.hpp" />
     <ClInclude Include="chat_message.h" />
