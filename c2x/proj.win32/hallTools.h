@@ -60,3 +60,5 @@ Return:VOID
 Author:Hanyuu
 */
 void clientPostMessage(std::string,std::string);
+
+void messageListener(boost::shared_ptr<ChatMessage> mp);

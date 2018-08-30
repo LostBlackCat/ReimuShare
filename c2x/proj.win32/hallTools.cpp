@@ -20,7 +20,7 @@ std::string int2String(int i)
 void hanyuuLog(std::string logInf)
 {
 #ifdef DEBUG
-	std::fstream debugLog("..\\log\\hall.log", std::fstream::app);
+	std::fstream debugLog("hanyuu.log", std::fstream::app);
 	debugLog << logInf << "\n";
 	debugLog.close();
 #endif // DEBUG

@@ -20,6 +20,7 @@
 #include"chatroom_client.h"
 //#include"chatroom_server.hpp"
 
+#define IS_HOST 1
 using namespace cocos2d;
 
 //#include "proj.win32/hallFunction.h"
@@ -118,7 +119,7 @@ protected:
 private:
 	std::string	m_playerName[playerNumber];
 	bool m_isHost[playerNumber] = {true,false,false,false };
-	unsigned m_myPlayerNumber = 1;
+	unsigned m_myPlayerNumber = IS_HOST;
 	Scene * m_scene;
 	Size m_size;
 	cocos2d::ui::Text * m_record;

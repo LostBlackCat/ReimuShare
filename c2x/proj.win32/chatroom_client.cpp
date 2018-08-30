@@ -17,7 +17,22 @@
 {
 	ip::tcp::endpoint ep(ip::address::from_string(ipv4), 667);
 	sock->async_connect(ep, boost::bind(&ChatroomClient::connect_handler, this, _1));
+	boost::thread timingThread(boost::bind(&ChatroomClient::timing_thread_func, this));
 }
+
+ void ChatroomClient::timing_thread_func()
+  {
+	  auto timer = new deadline_timer(io, CLOCK_TIME);	 timer->async_wait(boost::bind(&ChatroomClient::timer_handler, this, _1, timer));
+	  io.run();
+  }
+
+ void ChatroomClient::timer_handler(error_code ec, deadline_timer* timer)
+  {
+	  // cout << "start one timer" << endl;
+	  timer->expires_at(timer->expires_at() + CLOCK_TIME);
+	  timer->async_wait(boost::bind(&ChatroomClient::timer_handler, this, _1, timer));
+	  //io.run();
+  }
 
 /*
 ** 发送一条消息
@@ -25,6 +40,7 @@
 
   void ChatroomClient::post(ChatMessage msg)
 {
+	  cout << "post one msg" << endl;
 	  boost::shared_ptr<std::stringstream> ss(new std::stringstream);
 	  boost::archive::text_oarchive oa(*ss);
 	  oa << msg;

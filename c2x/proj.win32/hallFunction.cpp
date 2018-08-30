@@ -2,7 +2,7 @@
 //Author:hanyuu
 //Commit:
 //	提供控制大厅的类
-#define IP "223.3.105.227"
+#define IP "127.0.0.1"
 
 #include "hallFunction.h"
 
@@ -11,7 +11,7 @@
 extern Hall hall;
 
 bool  playerIsHost;
-void messageListener(boost::shared_ptr<ChatMessage> mp);
+
 
 ////玩家数量默认为4，若要改动请对应更改UI
 //unsigned Hall::playerNumber = 4;
@@ -115,9 +115,12 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 		//player->setSystemFontSize(50);
 		m_playerName[i] = hallplayer[i].playerName;
 		player->setString(hallplayer[i].playerName);
-		//player->setColor(cocos2d::Color3B(45,34,165));
-
+		if (i==m_myPlayerNumber)
+		{
+			player->setTextColor(cocos2d::Color4B(241,148,131,100));
+		}
 	}
+	
 }
 
 bool Hall::sendChatMessage(std::string strMessage) const
@@ -151,6 +154,7 @@ void Hall::addMessageRecord(std::string str)
 {
 	m_chatRecord = m_chatRecord + "[ " + m_playerName[m_myPlayerNumber] + " ] : " + str + "\n";
 	m_record->setString(m_chatRecord);
+	hanyuuLog("[ Chat record ]:\n" + m_chatRecord + "\n");
 }
 
 void Hall::addMessageRecord(std::string str, std::string userName)
@@ -179,7 +183,6 @@ void messageListener(boost::shared_ptr<ChatMessage> mp)
 {
 	hanyuuLog("clientGetMessage function lunched");
 	hanyuuLog("[Receive message from:" + mp->playerName + "]:" + mp->message);
-	//hanyuuLog(mp->message);
 	hall.addMessageRecord(mp->message, mp->playerName);
 }
 
