@@ -137,8 +137,6 @@
     </ClCompile>
     <ClCompile Include="chatroom_client.cpp" />
     <ClCompile Include="chatroom_server.cpp" />
-    <ClCompile Include="client_main_func.cpp" />
-    <ClCompile Include="server_main_func.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">

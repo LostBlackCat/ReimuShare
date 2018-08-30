@@ -32,8 +32,8 @@
 			{
 				"object": {
 					"contentSize": {
-						"w": 1920,
-						"h": 1080
+						"w": 1600,
+						"h": 900
 					},
 					"enabled": true,
 					"name": "hallCanvas",
@@ -52,8 +52,8 @@
 					"opacity": 255,
 					"opacityModifyRGB": false,
 					"position": {
-						"x": 960,
-						"y": 540
+						"x": 800,
+						"y": 450
 					},
 					"rotationSkewX": 0,
 					"rotationSkewY": 0,
@@ -71,8 +71,8 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 1920,
-									"h": 1080
+									"w": 1600,
+									"h": 900
 								},
 								"enabled": true,
 								"name": "hallBackground",
@@ -91,8 +91,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -960,
-									"y": -540
+									"x": -800,
+									"y": -450
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -167,7 +167,7 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 960,
+									"w": 800,
 									"h": 500
 								},
 								"enabled": true,
@@ -187,8 +187,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -960,
-									"y": -540
+									"x": -800,
+									"y": -450
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -293,7 +293,7 @@
 										"opacity": 255,
 										"opacityModifyRGB": false,
 										"position": {
-											"x": 960,
+											"x": 800,
 											"y": 0
 										},
 										"rotationSkewX": 0,
@@ -371,8 +371,8 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 960,
-									"h": 1080
+									"w": 800,
+									"h": 900
 								},
 								"enabled": true,
 								"name": "hallMap",
@@ -391,7 +391,7 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": 480,
+									"x": 400,
 									"y": 0
 								},
 								"rotationSkewX": 0,
@@ -424,8 +424,8 @@
 								"enabled": true,
 								"name": "hallTitleParticlesystem",
 								"anchorPoint": {
-									"x": 0.5,
-									"y": 0.5
+									"x": 1,
+									"y": 0
 								},
 								"cascadeOpacityEnabled": true,
 								"color": {
@@ -438,8 +438,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": 387,
-									"y": -246
+									"x": -100,
+									"y": 40
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -480,8 +480,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -865,
-									"y": 411
+									"x": -705,
+									"y": 330
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -570,8 +570,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -865,
-									"y": 141
+									"x": -705,
+									"y": 105
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -660,8 +660,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -485,
-									"y": 411
+									"x": -325,
+									"y": 330
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -750,8 +750,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -485,
-									"y": 141
+									"x": -325,
+									"y": 105
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -935,7 +935,7 @@
 						"opacityModifyRGB": false,
 						"position": {
 							"x": 200,
-							"y": 932
+							"y": 770
 						},
 						"rotationSkewX": 0,
 						"rotationSkewY": 0,
@@ -984,7 +984,7 @@
 						"opacityModifyRGB": false,
 						"position": {
 							"x": 200,
-							"y": 662
+							"y": 545
 						},
 						"rotationSkewX": 0,
 						"rotationSkewY": 0,
@@ -1033,7 +1033,7 @@
 						"opacityModifyRGB": false,
 						"position": {
 							"x": 600,
-							"y": 932
+							"y": 770
 						},
 						"rotationSkewX": 0,
 						"rotationSkewY": 0,
@@ -1082,7 +1082,7 @@
 						"opacityModifyRGB": false,
 						"position": {
 							"x": 600,
-							"y": 662
+							"y": 545
 						},
 						"rotationSkewX": 0,
 						"rotationSkewY": 0,
@@ -1109,8 +1109,8 @@
 		]
 	},
 	"designResolution": {
-		"w": 1920,
-		"h": 1080
+		"w": 1600,
+		"h": 900
 	},
 	"resolutionFitWidth": true,
 	"resolutionFitHeight": false,

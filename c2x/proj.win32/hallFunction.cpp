@@ -2,12 +2,16 @@
 //Author:hanyuu
 //Commit:
 //	提供控制大厅的类
+#define IP "223.3.105.227"
 
 #include "hallFunction.h"
 
 #include"chatroom_client.h"
 
+extern Hall hall;
+
 bool  playerIsHost;
+void messageListener(boost::shared_ptr<ChatMessage> mp);
 
 ////玩家数量默认为4，若要改动请对应更改UI
 //unsigned Hall::playerNumber = 4;
@@ -16,21 +20,30 @@ bool  playerIsHost;
 boost::mutex lock;
 ChatroomServer * ptr = nullptr;
 ChatroomClient * cptr = nullptr;
-Hall::Hall(Scene * scene)
+Hall::Hall()
+{
+	hanyuuLog("-**Start log**-\nObject Hall generated.");
+}
+
+Hall::~Hall()
+{
+	hanyuuLog("Object Hall destroyed.\n-**End log**-\n");
+}
+
+void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 {
 	playerIsHost = isHost();
-	if (playerIsHost) 
+	if (playerIsHost)
 	{
-		boost::thread postThread(server_start_qe, server_message_listener, ptr);
+		ptr = server_start(messageListener);
 	}
 	else
 	{
-		boost::thread connectThread(&connectMessage);
+		cptr = client_start(IP, messageListener);
 	}
 
 
 	m_size = Director::getInstance()->getVisibleSize();
-	//m_scene->addChild((cocos2d::Node*)m_CCTFDChattingRecord);
 	if (scene != nullptr)
 	{
 		m_scene = scene;
@@ -67,7 +80,7 @@ Hall::Hall(Scene * scene)
 			}
 		});
 		//初始化聊天记录框
-		m_record = cocos2d::ui::Text::create("Text examples【用户示例】", "..\\font\\gameFont.ttf", 32);
+		m_record = cocos2d::ui::Text::create("Let's talk!", "..\\font\\gameFont.ttf", 32);
 		m_record->setFontSize(30.0f);
 		m_record->setAnchorPoint(Vec2(0, 0));
 		m_record->setPosition(Vec2(20.0f, 50.0f));
@@ -83,22 +96,14 @@ Hall::Hall(Scene * scene)
 		std::string a = m_editBox->getStringValue();
 		m_scene->addChild(m_editBox);
 
-		hanyuuLog("-**Start log**-\nObject Hall generated.");
+		hanyuuLog("Class hall get scene sucess.");
 	}
 	else
 	{
 		hanyuuLog("Class Hall can't touch scene");
 		throw std::exception("Empty scene");
 	}
-}
 
-Hall::~Hall()
-{
-	hanyuuLog("Object Hall destroyed.\n-**End log**-\n");
-}
-
-void Hall::feedPlayerInformation(HallPlayer* hallplayer)
-{
 	std::string strHead = "bleb";
 
 	for (unsigned i = 0; i < Hall::playerNumber; i++)
@@ -164,17 +169,18 @@ std::string Hall::getUserName() const
 	return m_playerName[m_myPlayerNumber];
 }
 
-void connectMessage()
-{
-	hanyuuLog("Connect message thread lunched.");
-	client_start("127.0.0.1", clientGetMessage, cptr);
-}
+//void connectMessage()
+//{
+//	hanyuuLog("Connect message thread lunched.");
+//	client_start("127.0.0.1", clientGetMessage, cptr);
+//}
 
-void clientGetMessage(boost::shared_ptr<ChatMessage> mp)
+void messageListener(boost::shared_ptr<ChatMessage> mp)
 {
 	hanyuuLog("clientGetMessage function lunched");
-	hanyuuLog(mp->playerName);
-	hanyuuLog(mp->message);
+	hanyuuLog("[Receive message from:" + mp->playerName + "]:" + mp->message);
+	//hanyuuLog(mp->message);
+	hall.addMessageRecord(mp->message, mp->playerName);
 }
 
 void  clientPostMessage(std::string strMessage, std::string userName)
@@ -185,7 +191,6 @@ void  clientPostMessage(std::string strMessage, std::string userName)
 	if (playerIsHost)
 	{
 		ptr->post(CMMessageFrame);
-		
 	}
 	else
 	{

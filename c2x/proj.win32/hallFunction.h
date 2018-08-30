@@ -28,7 +28,7 @@ class Hall
 public:
 	//玩家数量
 	const static unsigned playerNumber = 4;
-	Hall(Scene *);
+	Hall();
 	virtual ~Hall();
 	/*
 	Function name:feedPlayerInformation
@@ -38,8 +38,7 @@ public:
 	Return Code:VOID
 	Authro:Hanyuu
 	*/
-	void feedPlayerInformation(HallPlayer *);
-
+	void feedPlayerInformation(Scene * scene, HallPlayer* hallplayer);
 	/*
 	Function name:sendMessage
 	Description:发送聊天信息
@@ -119,7 +118,7 @@ protected:
 private:
 	std::string	m_playerName[playerNumber];
 	bool m_isHost[playerNumber] = {true,false,false,false };
-	unsigned m_myPlayerNumber = 0;
+	unsigned m_myPlayerNumber = 1;
 	Scene * m_scene;
 	Size m_size;
 	cocos2d::ui::Text * m_record;

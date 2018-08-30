@@ -23,7 +23,7 @@
  ****************************************************************************/
 
 #include "AppDelegate.h"
-
+  Hall hall;
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
 
@@ -125,7 +125,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	creator::CreatorReader* reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
 	reader->setup();
 	Scene * scene = reader->getSceneGraph();
-	static Hall hall(scene);
 
 
 	//creator::CreatorReader * reader = creator::CreatorReader::createWithFilename("creator/Scene/Hall.ccreator");
@@ -143,8 +142,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	//}
 	////Test code
 
-	HallPlayer test[4] = { {"s","0"},{"s","s1"},{"s","s2"},{"s","s3"} };
-	hall.feedPlayerInformation(test);
+	HallPlayer test[4] = { {"s","cpp"},{"s","cocos"},{"s","cSharp"},{"s","boost"} };
+	hall.feedPlayerInformation(scene,test);
     director->runWithScene(scene);
 
     return true;

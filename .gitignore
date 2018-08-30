@@ -294,6 +294,7 @@ QT/QWidget/build-QWidget-Desktop_Qt_5_11_1_MSVC2017_64bit-Debug/
 
 c2x/cocos2d
 c2x/proj.win32/Debug.win32/
+c2x/proj.win32/Release.win32
 NewProject/local
 NewProject/library
 c2x/log
