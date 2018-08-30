@@ -51,14 +51,4 @@ Author:Hanyuu
 */
 void clientGetMessage(boost::shared_ptr<ChatMessage> mp);
 
-/*
-Function name:clientPostMessage
-Description:发送信息
-Created:18/08/29
-Parameter:shared_ptr:调用对象的智能指针
-Return:VOID
-Author:Hanyuu
-*/
-void clientPostMessage(std::string,std::string);
 
-void messageListener(boost::shared_ptr<ChatMessage> mp);

@@ -32,8 +32,8 @@ Hall::~Hall()
 
 void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 {
-	playerIsHost = isHost();
-	if (playerIsHost)
+	//聊天室收发
+	if (isHost())
 	{
 		ptr = server_start(messageListener);
 	}
@@ -42,13 +42,14 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 		cptr = client_start(IP, messageListener);
 	}
 
-
+	//获取可视尺寸
 	m_size = Director::getInstance()->getVisibleSize();
+
+	//导入场景
 	if (scene != nullptr)
 	{
 		m_scene = scene;
 		//初始化发送按钮
-		//m_sendButton = (ui::Button*) m_scene->getChildByName("button");
 		m_sendButton = (ui::Button*) m_scene->getChildByName("hallCanvas")->getChildByName("shadowVertcial")->getChildByName("hallChatMessageSendButton");
 		m_sendButton->setTitleText("Send");
 		m_sendButton->setTitleFontName("微软雅黑");
@@ -59,17 +60,17 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 			switch (type)
 			{
 			case cocos2d::ui::Widget::TouchEventType::BEGAN:
-				hanyuuLog("Send button touch began.");
+				//hanyuuLog("Send button touch began.");
 				break;
 			case cocos2d::ui::Widget::TouchEventType::MOVED:
-				hanyuuLog("Send button touch moved.");
+				//hanyuuLog("Send button touch moved.");
 				break;
 			case cocos2d::ui::Widget::TouchEventType::ENDED:
-				sendChatMessage(getEditMessage());
+				//sendChatMessage(getEditMessage());
 				//addMessageRecord(getEditMessage());
 				clientPostMessage(getEditMessage(), getUserName());
 				clearEditBox();
-				hanyuuLog("Send button touch ended.");
+				//hanyuuLog("Send button touch ended.");
 				break;
 			case cocos2d::ui::Widget::TouchEventType::CANCELED:
 				hanyuuLog("Send button touch canceled.");
@@ -106,6 +107,8 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 
 	std::string strHead = "bleb";
 
+	hanyuuLog("[Player information]:");
+
 	for (unsigned i = 0; i < Hall::playerNumber; i++)
 	{
 
@@ -114,20 +117,20 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 		player->setZOrder(100);
 		m_playerName[i] = hallplayer[i].playerName;
 		player->setString(hallplayer[i].playerName);
+		hanyuuLog(hallplayer[i].playerName);
 		if (i == m_myPlayerNumber)
 		{
-			player->setTextColor(cocos2d::Color4B(241, 148, 131, 100));
+			player->setTextColor(cocos2d::Color4B(105, 176, 172, 255));
 		}
 	}
 
 }
 
-bool Hall::sendChatMessage(std::string strMessage) const
-{
-	//strMessage = m_editBox->getInsertText();
-	hanyuuLog(strMessage);
-	return true;
-}
+//bool Hall::sendChatMessage(std::string strMessage) const
+//{
+//	hanyuuLog(strMessage);
+//	return true;
+//}
 
 std::string Hall::getEditMessage() const
 {
@@ -151,9 +154,9 @@ void Hall::clearEditBox()
 
 void Hall::addMessageRecord(std::string str)
 {
-	m_chatRecord = m_chatRecord + "[ " + m_playerName[m_myPlayerNumber] + " ] : " + str + "\n";
+	m_chatRecord += "[" + m_playerName[m_myPlayerNumber] + "]" + str + "\n";
 	m_record->setString(m_chatRecord);
-	hanyuuLog("[ Chat record ]:\n" + m_chatRecord + "\n");
+	hanyuuLog("[Chat record]\n" + m_chatRecord + "\n");
 }
 
 void Hall::addMessageRecord(std::string str, std::string userName)
@@ -178,19 +181,19 @@ std::string Hall::getUserName() const
 //	client_start("127.0.0.1", clientGetMessage, cptr);
 //}
 
-void messageListener(boost::shared_ptr<ChatMessage> mp)
+void Hall::messageListener(boost::shared_ptr<ChatMessage> mp)
 {
 	hanyuuLog("clientGetMessage function lunched");
 	hanyuuLog("[Receive message from:" + mp->playerName + "]:" + mp->message);
 	hall.addMessageRecord(mp->message, mp->playerName);
 }
 
-void  clientPostMessage(std::string strMessage, std::string userName)
+void  Hall::clientPostMessage(std::string strMessage, std::string userName)
 {
 	ChatMessage  CMMessageFrame;
 	CMMessageFrame.playerName = userName;
 	CMMessageFrame.message = strMessage;
-	if (playerIsHost)
+	if (isHost())
 	{
 		ptr->post(CMMessageFrame);
 	}
@@ -198,5 +201,5 @@ void  clientPostMessage(std::string strMessage, std::string userName)
 	{
 		cptr->post(CMMessageFrame);
 	}
-	hanyuuLog("Post message:" + strMessage);
+	hanyuuLog("[Post message]\n    " + strMessage);
 }

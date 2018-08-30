@@ -48,7 +48,16 @@ public:
 	Return Code:bool:发送成功判断
 	Author:Hanyuu
 	*/
-	bool sendChatMessage(std::string) const;
+	//bool sendChatMessage(std::string) const;
+	/*
+	Function name : clientPostMessage
+		Description : 发送信息
+		Created : 18 / 08 / 29
+		Parameter:shared_ptr:调用对象的智能指针
+		Return : VOID
+		Author : Hanyuu
+		*/
+	void clientPostMessage(std::string, std::string);
 
 	/*
 	Function name:getEditMessage
@@ -114,11 +123,20 @@ public:
 	//*/
 	//void connectMessage();
 
+	/*
+	Function name:	messageListener
+	Description:监听信息
+	Created:20180830
+	Parameter:shared_ptr:传入的指针
+	Return:string:VOID
+	Author:Hanyuu
+	*/
+	void messageListener(boost::shared_ptr<ChatMessage>);
 
 protected:
 private:
 	std::string	m_playerName[playerNumber];
-	bool m_isHost[playerNumber] = {true,false,false,false };
+	bool m_isHost[playerNumber] = { true,false,false,false };
 	unsigned m_myPlayerNumber = IS_HOST;
 	Scene * m_scene;
 	Size m_size;
