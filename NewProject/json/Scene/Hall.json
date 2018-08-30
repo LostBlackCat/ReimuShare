@@ -493,7 +493,7 @@
 								"groupIndex": 0,
 								"colliders": []
 							},
-							"spriteFrameName": "image/default_sprite.png",
+							"spriteFrameName": "picture/head-0.png",
 							"spriteType": "Simple",
 							"srcBlend": 770,
 							"dstBlend": 771,
@@ -583,7 +583,7 @@
 								"groupIndex": 0,
 								"colliders": []
 							},
-							"spriteFrameName": "image/default_sprite.png",
+							"spriteFrameName": "picture/head-1.png",
 							"spriteType": "Simple",
 							"srcBlend": 770,
 							"dstBlend": 771,
@@ -673,7 +673,7 @@
 								"groupIndex": 0,
 								"colliders": []
 							},
-							"spriteFrameName": "image/default_sprite.png",
+							"spriteFrameName": "picture/head-2.png",
 							"spriteType": "Simple",
 							"srcBlend": 770,
 							"dstBlend": 771,
@@ -763,7 +763,7 @@
 								"groupIndex": 0,
 								"colliders": []
 							},
-							"spriteFrameName": "image/default_sprite.png",
+							"spriteFrameName": "picture/head-3.png",
 							"spriteType": "Simple",
 							"srcBlend": 770,
 							"dstBlend": 771,
@@ -1291,13 +1291,13 @@
 			}
 		},
 		{
-			"name": "image/default_sprite.png",
-			"texturePath": "creator/image/default_sprite.png",
+			"name": "picture/head-0.png",
+			"texturePath": "creator/picture/head-0.png",
 			"rect": {
 				"x": 0,
-				"y": 2,
-				"w": 40,
-				"h": 36
+				"y": 0,
+				"w": 220,
+				"h": 220
 			},
 			"offset": {
 				"x": 0,
@@ -1305,14 +1305,89 @@
 			},
 			"rotated": false,
 			"originalSize": {
-				"w": 40,
-				"h": 40
+				"w": 220,
+				"h": 220
 			},
 			"centerRect": {
 				"x": 0,
 				"y": 0,
-				"w": 40,
-				"h": 36
+				"w": 220,
+				"h": 220
+			}
+		},
+		{
+			"name": "picture/head-1.png",
+			"texturePath": "creator/picture/head-1.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 220,
+				"h": 220
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 220,
+				"h": 220
+			},
+			"centerRect": {
+				"x": 0,
+				"y": 0,
+				"w": 220,
+				"h": 220
+			}
+		},
+		{
+			"name": "picture/head-2.png",
+			"texturePath": "creator/picture/head-2.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 260,
+				"h": 258
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 260,
+				"h": 258
+			},
+			"centerRect": {
+				"x": 0,
+				"y": 0,
+				"w": 260,
+				"h": 258
+			}
+		},
+		{
+			"name": "picture/head-3.png",
+			"texturePath": "creator/picture/head-3.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 304,
+				"h": 302
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 304,
+				"h": 302
+			},
+			"centerRect": {
+				"x": 0,
+				"y": 0,
+				"w": 304,
+				"h": 302
 			}
 		}
 	],
