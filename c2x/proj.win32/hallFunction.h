@@ -32,31 +32,27 @@ public:
 	Hall();
 	virtual ~Hall();
 	/*
-	Function name:feedPlayerInformation
+	Function name:initializationHall
 	Description:以数组形式注册玩家信息
-	Created:180824
-	Parameter：HallPlayer：玩家信息数组指针，用于传入玩家信息
+	Created:18/08/24
+	Parameter：
+		Scene:传入导出的场景指针
+		HallPlayer：玩家信息数组指针，用于传入玩家信息
 	Return Code:VOID
 	Authro:Hanyuu
 	*/
-	void feedPlayerInformation(Scene * scene, HallPlayer* hallplayer);
-	/*
-	Function name:sendMessage
-	Description:发送聊天信息
-	Created:180826
-	Parameter:String:待发送的信息变量
-	Return Code:bool:发送成功判断
-	Author:Hanyuu
-	*/
-	//bool sendChatMessage(std::string) const;
+	void initializationHall(Scene * scene, HallPlayer* hallplayer);
+
 	/*
 	Function name : clientPostMessage
-		Description : 发送信息
-		Created : 18 / 08 / 29
-		Parameter:shared_ptr:调用对象的智能指针
-		Return : VOID
-		Author : Hanyuu
-		*/
+	Description : 发送信息
+	Created : 18/08/29
+	Parameter:
+		string:待发送信息
+		string:发送者用户名
+	Return : VOID
+	Author : Hanyuu
+	*/
 	void clientPostMessage(std::string, std::string);
 
 	/*
@@ -112,7 +108,6 @@ public:
 	*/
 	std::string getUserName() const;
 
-
 	///*
 	//Function name:connectMessage
 	//Description:通讯线程
@@ -133,6 +128,16 @@ public:
 	*/
 	void messageListener(boost::shared_ptr<ChatMessage>);
 
+
+	/*
+	Function name:sendMessage
+	Description:发送聊天信息
+	Created:180826
+	Parameter:String:待发送的信息变量
+	Return Code:bool:发送成功判断
+	Author:Hanyuu
+	*/
+	//bool sendChatMessage(std::string) const;
 protected:
 private:
 	std::string	m_playerName[playerNumber];

@@ -29,7 +29,7 @@ Hall::~Hall()
 	hanyuuLog("Object Hall destroyed.\n-**End log**-\n");
 }
 
-void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
+void Hall::initializationHall(Scene * scene, HallPlayer* hallplayer)
 {
 	//ÁÄÌìÊÒÊÕ·¢
 	if (isHost())
@@ -122,7 +122,6 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 			player->setTextColor(cocos2d::Color4B(105, 176, 172, 255));
 		}
 	}
-
 }
 
 //bool Hall::sendChatMessage(std::string strMessage) const
@@ -160,7 +159,7 @@ void Hall::addMessageRecord(std::string str)
 
 void Hall::addMessageRecord(std::string str, std::string userName)
 {
-	m_chatRecord = m_chatRecord + "[ " + userName + " ] : " + str + "\n";
+	m_chatRecord = m_chatRecord + "[" + userName + "]\n    " + str + "\n";
 	m_record->setString(m_chatRecord);
 }
 
@@ -182,9 +181,8 @@ std::string Hall::getUserName() const
 
 void Hall::messageListener(boost::shared_ptr<ChatMessage> mp)
 {
-	hanyuuLog("clientGetMessage function lunched");
-	hanyuuLog("[Receive message from:" + mp->playerName + "]:" + mp->message);
 	hall.addMessageRecord(mp->message, mp->playerName);
+	hanyuuLog("[Receive message from:" + mp->playerName + "\n    " + mp->message);
 }
 
 void  Hall::clientPostMessage(std::string strMessage, std::string userName)

@@ -143,7 +143,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	////Test code
 
 	HallPlayer test[4] = { {"s","cpp"},{"s","cocos"},{"s","cSharp"},{"s","boost"} };
-	hall.feedPlayerInformation(scene,test);
+	hall.initializationHall(scene,test);
     director->runWithScene(scene);
 
     return true;

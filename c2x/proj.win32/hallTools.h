@@ -8,9 +8,9 @@
 #include<sstream>
 #include<fstream>
 //#include<boost/shared_ptr.hpp>
-#include "chatroom_server.h"
-#include"chatroom_client.h"
-#include <boost/thread.hpp>
+//#include "chatroom_server.h"
+//#include"chatroom_client.h"
+//#include <boost/thread.hpp>
 
 /*
 Function name:int2String
@@ -39,7 +39,7 @@ Parameter:VOID
 Return:VOID
 Author:Hanyuu
 */
-void connectMessage();
+//void connectMessage();
 
 /*
 Function name:clientGetMessage
@@ -49,6 +49,6 @@ Parameter:shared_ptr:调用对象的智能指针
 Return:VOID
 Author:Hanyuu
 */
-void clientGetMessage(boost::shared_ptr<ChatMessage> mp);
+//void clientGetMessage(boost::shared_ptr<ChatMessage> mp);
 
 
