@@ -144,6 +144,8 @@ private:
 	cocos2d::ui::Button * m_sendButton;
 	cocos2d::ui::TextField * m_editBox;
 	std::string m_chatRecord;
+	ChatroomServer * ptr = nullptr;
+	ChatroomClient * cptr = nullptr;
 };
 
 //#endif

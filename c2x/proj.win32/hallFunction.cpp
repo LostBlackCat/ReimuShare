@@ -18,8 +18,7 @@ bool  playerIsHost;
 
 //互斥锁
 boost::mutex lock;
-ChatroomServer * ptr = nullptr;
-ChatroomClient * cptr = nullptr;
+
 Hall::Hall()
 {
 	hanyuuLog("-**Start log**-\nObject Hall generated.");
@@ -35,11 +34,11 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 	//聊天室收发
 	if (isHost())
 	{
-		ptr = server_start(messageListener);
+		ptr = server_start(boost::bind(&Hall::messageListener,this,_1));
 	}
 	else
 	{
-		cptr = client_start(IP, messageListener);
+		cptr = client_start(IP, boost::bind(&Hall::messageListener, this,_1));
 	}
 
 	//获取可视尺寸
