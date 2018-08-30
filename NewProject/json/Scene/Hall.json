@@ -118,62 +118,13 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 151,
-									"h": 40
+									"w": 300,
+									"h": 900
 								},
 								"enabled": true,
-								"name": "hallTitile",
+								"name": "shadow",
 								"anchorPoint": {
-									"x": 0.5,
-									"y": 0.5
-								},
-								"cascadeOpacityEnabled": true,
-								"color": {
-									"r": 255,
-									"g": 255,
-									"b": 255
-								},
-								"globalZOrder": 0,
-								"localZOrder": 0,
-								"opacity": 255,
-								"opacityModifyRGB": false,
-								"position": {
-									"x": 548,
-									"y": -378
-								},
-								"rotationSkewX": 0,
-								"rotationSkewY": 0,
-								"scaleX": 1,
-								"scaleY": 1,
-								"skewX": 0,
-								"skewY": 0,
-								"tag": -1,
-								"groupIndex": 0,
-								"colliders": []
-							},
-							"fontSize": 40,
-							"labelText": "Minimap",
-							"horizontalAlignment": "Center",
-							"verticalAlignment": "Center",
-							"overflowType": "None",
-							"enableWrap": true,
-							"fontType": "System",
-							"fontName": "arial"
-						},
-						"object_type": "Label",
-						"children": []
-					},
-					{
-						"object": {
-							"node": {
-								"contentSize": {
-									"w": 800,
-									"h": 500
-								},
-								"enabled": true,
-								"name": "shadowVertcial",
-								"anchorPoint": {
-									"x": 0,
+									"x": 1,
 									"y": 0
 								},
 								"cascadeOpacityEnabled": true,
@@ -187,7 +138,54 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -800,
+									"x": 825,
+									"y": -450
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"spriteFrameName": "picture/shadow.png",
+							"spriteType": "Simple",
+							"srcBlend": 770,
+							"dstBlend": 771,
+							"trimEnabled": true,
+							"sizeMode": "Custom"
+						},
+						"object_type": "Sprite",
+						"children": []
+					},
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 600,
+									"h": 900
+								},
+								"enabled": true,
+								"name": "shadowVertcial",
+								"anchorPoint": {
+									"x": 1,
+									"y": 0
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": 600,
 									"y": -450
 								},
 								"rotationSkewX": 0,
@@ -274,7 +272,7 @@
 									"node": {
 										"contentSize": {
 											"w": 100,
-											"h": 40
+											"h": 50
 										},
 										"enabled": true,
 										"name": "hallChatMessageSendButton",
@@ -293,7 +291,7 @@
 										"opacity": 255,
 										"opacityModifyRGB": false,
 										"position": {
-											"x": 800,
+											"x": 0,
 											"y": 0
 										},
 										"rotationSkewX": 0,
@@ -319,7 +317,7 @@
 											"node": {
 												"contentSize": {
 													"w": 100,
-													"h": 40
+													"h": 50
 												},
 												"enabled": true,
 												"name": "Label",
@@ -339,7 +337,7 @@
 												"opacityModifyRGB": false,
 												"position": {
 													"x": -50,
-													"y": 20
+													"y": 25
 												},
 												"rotationSkewX": 0,
 												"rotationSkewY": 0,
@@ -371,53 +369,6 @@
 						"object": {
 							"node": {
 								"contentSize": {
-									"w": 800,
-									"h": 900
-								},
-								"enabled": true,
-								"name": "hallMap",
-								"anchorPoint": {
-									"x": 0.5,
-									"y": 0.5
-								},
-								"cascadeOpacityEnabled": true,
-								"color": {
-									"r": 255,
-									"g": 255,
-									"b": 255
-								},
-								"globalZOrder": 0,
-								"localZOrder": 0,
-								"opacity": 255,
-								"opacityModifyRGB": false,
-								"position": {
-									"x": 400,
-									"y": 0
-								},
-								"rotationSkewX": 0,
-								"rotationSkewY": 0,
-								"scaleX": 1,
-								"scaleY": 1,
-								"skewX": 0,
-								"skewY": 0,
-								"tag": -1,
-								"groupIndex": 0,
-								"colliders": []
-							},
-							"spriteFrameName": "picture/map.png",
-							"spriteType": "Simple",
-							"srcBlend": 770,
-							"dstBlend": 771,
-							"trimEnabled": true,
-							"sizeMode": "Custom"
-						},
-						"object_type": "Sprite",
-						"children": []
-					},
-					{
-						"object": {
-							"node": {
-								"contentSize": {
 									"w": 0,
 									"h": 0
 								},
@@ -438,8 +389,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -100,
-									"y": 40
+									"x": -825,
+									"y": 415
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -480,8 +431,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -705,
-									"y": 330
+									"x": 685,
+									"y": 357
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -550,6 +501,55 @@
 						"object": {
 							"node": {
 								"contentSize": {
+									"w": 136,
+									"h": 40
+								},
+								"enabled": true,
+								"name": "bleb0",
+								"anchorPoint": {
+									"x": 0.5,
+									"y": 0
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": 692,
+									"y": 230
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"fontSize": 40,
+							"labelText": "Player0",
+							"horizontalAlignment": "Center",
+							"verticalAlignment": "Center",
+							"overflowType": "Clamp",
+							"enableWrap": false,
+							"fontType": "System",
+							"fontName": "arial"
+						},
+						"object_type": "Label",
+						"children": []
+					},
+					{
+						"object": {
+							"node": {
+								"contentSize": {
 									"w": 150,
 									"h": 150
 								},
@@ -570,8 +570,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -705,
-									"y": 105
+									"x": 685,
+									"y": 131.99999999999997
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -641,13 +641,13 @@
 							"node": {
 								"contentSize": {
 									"w": 150,
-									"h": 150
+									"h": 40
 								},
 								"enabled": true,
-								"name": "player2",
+								"name": "bleb1",
 								"anchorPoint": {
 									"x": 0.5,
-									"y": 0.5
+									"y": 0
 								},
 								"cascadeOpacityEnabled": true,
 								"color": {
@@ -660,8 +660,57 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -325,
-									"y": 330
+									"x": 685,
+									"y": 5
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"fontSize": 40,
+							"labelText": "Player1",
+							"horizontalAlignment": "Center",
+							"verticalAlignment": "Center",
+							"overflowType": "Clamp",
+							"enableWrap": false,
+							"fontType": "System",
+							"fontName": "arial"
+						},
+						"object_type": "Label",
+						"children": []
+					},
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 150,
+									"h": 150
+								},
+								"enabled": true,
+								"name": "player2",
+								"anchorPoint": {
+									"x": 0.5,
+									"y": 0
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": 685,
+									"y": -168
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -707,7 +756,7 @@
 										"opacityModifyRGB": false,
 										"position": {
 											"x": 75,
-											"y": -75
+											"y": 0
 										},
 										"rotationSkewX": 0,
 										"rotationSkewY": 0,
@@ -725,6 +774,55 @@
 								"children": []
 							}
 						]
+					},
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 150,
+									"h": 40
+								},
+								"enabled": true,
+								"name": "bleb2",
+								"anchorPoint": {
+									"x": 0.5,
+									"y": 0
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": 685,
+									"y": -220
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"fontSize": 40,
+							"labelText": "Player2",
+							"horizontalAlignment": "Center",
+							"verticalAlignment": "Center",
+							"overflowType": "Clamp",
+							"enableWrap": false,
+							"fontType": "System",
+							"fontName": "arial"
+						},
+						"object_type": "Label",
+						"children": []
 					},
 					{
 						"object": {
@@ -750,8 +848,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -325,
-									"y": 105
+									"x": 685,
+									"y": -318
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -815,6 +913,55 @@
 								"children": []
 							}
 						]
+					},
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 150,
+									"h": 40
+								},
+								"enabled": true,
+								"name": "bleb3",
+								"anchorPoint": {
+									"x": 0.5,
+									"y": 0
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 255,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": 685,
+									"y": -445
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"fontSize": 40,
+							"labelText": "Player3",
+							"horizontalAlignment": "Center",
+							"verticalAlignment": "Center",
+							"overflowType": "Clamp",
+							"enableWrap": false,
+							"fontType": "System",
+							"fontName": "arial"
+						},
+						"object_type": "Label",
+						"children": []
 					}
 				]
 			},
@@ -909,202 +1056,6 @@
 						"children": []
 					}
 				]
-			},
-			{
-				"object": {
-					"node": {
-						"contentSize": {
-							"w": 98,
-							"h": 40
-						},
-						"enabled": true,
-						"name": "bleb0",
-						"anchorPoint": {
-							"x": 0,
-							"y": 0
-						},
-						"cascadeOpacityEnabled": true,
-						"color": {
-							"r": 255,
-							"g": 255,
-							"b": 255
-						},
-						"globalZOrder": 0,
-						"localZOrder": 0,
-						"opacity": 255,
-						"opacityModifyRGB": false,
-						"position": {
-							"x": 200,
-							"y": 770
-						},
-						"rotationSkewX": 0,
-						"rotationSkewY": 0,
-						"scaleX": 1,
-						"scaleY": 1,
-						"skewX": 0,
-						"skewY": 0,
-						"tag": -1,
-						"groupIndex": 0,
-						"colliders": []
-					},
-					"fontSize": 40,
-					"labelText": "Label",
-					"horizontalAlignment": "Center",
-					"verticalAlignment": "Center",
-					"overflowType": "None",
-					"enableWrap": true,
-					"fontType": "System",
-					"fontName": "arial"
-				},
-				"object_type": "Label",
-				"children": []
-			},
-			{
-				"object": {
-					"node": {
-						"contentSize": {
-							"w": 98,
-							"h": 40
-						},
-						"enabled": true,
-						"name": "bleb1",
-						"anchorPoint": {
-							"x": 0,
-							"y": 0
-						},
-						"cascadeOpacityEnabled": true,
-						"color": {
-							"r": 255,
-							"g": 255,
-							"b": 255
-						},
-						"globalZOrder": 0,
-						"localZOrder": 0,
-						"opacity": 255,
-						"opacityModifyRGB": false,
-						"position": {
-							"x": 200,
-							"y": 545
-						},
-						"rotationSkewX": 0,
-						"rotationSkewY": 0,
-						"scaleX": 1,
-						"scaleY": 1,
-						"skewX": 0,
-						"skewY": 0,
-						"tag": -1,
-						"groupIndex": 0,
-						"colliders": []
-					},
-					"fontSize": 40,
-					"labelText": "Label",
-					"horizontalAlignment": "Center",
-					"verticalAlignment": "Center",
-					"overflowType": "None",
-					"enableWrap": true,
-					"fontType": "System",
-					"fontName": "arial"
-				},
-				"object_type": "Label",
-				"children": []
-			},
-			{
-				"object": {
-					"node": {
-						"contentSize": {
-							"w": 98,
-							"h": 40
-						},
-						"enabled": true,
-						"name": "bleb2",
-						"anchorPoint": {
-							"x": 0,
-							"y": 0
-						},
-						"cascadeOpacityEnabled": true,
-						"color": {
-							"r": 255,
-							"g": 255,
-							"b": 255
-						},
-						"globalZOrder": 0,
-						"localZOrder": 0,
-						"opacity": 255,
-						"opacityModifyRGB": false,
-						"position": {
-							"x": 600,
-							"y": 770
-						},
-						"rotationSkewX": 0,
-						"rotationSkewY": 0,
-						"scaleX": 1,
-						"scaleY": 1,
-						"skewX": 0,
-						"skewY": 0,
-						"tag": -1,
-						"groupIndex": 0,
-						"colliders": []
-					},
-					"fontSize": 40,
-					"labelText": "Label",
-					"horizontalAlignment": "Center",
-					"verticalAlignment": "Center",
-					"overflowType": "None",
-					"enableWrap": true,
-					"fontType": "System",
-					"fontName": "arial"
-				},
-				"object_type": "Label",
-				"children": []
-			},
-			{
-				"object": {
-					"node": {
-						"contentSize": {
-							"w": 98,
-							"h": 40
-						},
-						"enabled": true,
-						"name": "bleb3",
-						"anchorPoint": {
-							"x": 0,
-							"y": 0
-						},
-						"cascadeOpacityEnabled": true,
-						"color": {
-							"r": 255,
-							"g": 255,
-							"b": 255
-						},
-						"globalZOrder": 0,
-						"localZOrder": 0,
-						"opacity": 255,
-						"opacityModifyRGB": false,
-						"position": {
-							"x": 600,
-							"y": 545
-						},
-						"rotationSkewX": 0,
-						"rotationSkewY": 0,
-						"scaleX": 1,
-						"scaleY": 1,
-						"skewX": 0,
-						"skewY": 0,
-						"tag": -1,
-						"groupIndex": 0,
-						"colliders": []
-					},
-					"fontSize": 40,
-					"labelText": "Label",
-					"horizontalAlignment": "Center",
-					"verticalAlignment": "Center",
-					"overflowType": "None",
-					"enableWrap": true,
-					"fontType": "System",
-					"fontName": "arial"
-				},
-				"object_type": "Label",
-				"children": []
 			}
 		]
 	},
@@ -1138,6 +1089,31 @@
 				"y": 0,
 				"w": 1304,
 				"h": 733
+			}
+		},
+		{
+			"name": "picture/shadow.png",
+			"texturePath": "creator/picture/shadow.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 50,
+				"h": 50
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 50,
+				"h": 50
+			},
+			"centerRect": {
+				"x": 0,
+				"y": 0,
+				"w": 50,
+				"h": 50
 			}
 		},
 		{
@@ -1263,31 +1239,6 @@
 				"y": 0,
 				"w": 50,
 				"h": 50
-			}
-		},
-		{
-			"name": "picture/map.png",
-			"texturePath": "creator/picture/map.png",
-			"rect": {
-				"x": 0,
-				"y": 0,
-				"w": 750,
-				"h": 750
-			},
-			"offset": {
-				"x": 0,
-				"y": 0
-			},
-			"rotated": false,
-			"originalSize": {
-				"w": 750,
-				"h": 750
-			},
-			"centerRect": {
-				"x": 0,
-				"y": 0,
-				"w": 750,
-				"h": 750
 			}
 		},
 		{

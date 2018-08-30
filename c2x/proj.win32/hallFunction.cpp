@@ -83,7 +83,7 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 		m_record = cocos2d::ui::Text::create("Let's talk!", "..\\font\\gameFont.ttf", 32);
 		m_record->setFontSize(30.0f);
 		m_record->setAnchorPoint(Vec2(0, 0));
-		m_record->setPosition(Vec2(20.0f, 50.0f));
+		m_record->setPosition(Vec2(m_size.width - 780.0f, 50.0f));
 		m_scene->addChild(m_record);
 
 		//初始化信息输入窗口
@@ -91,7 +91,7 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 		m_editBox->setFontSize(30.0f);
 		m_editBox->setPlaceHolder("Click here and input message");
 		m_editBox->setAnchorPoint(Vec2(0, 0));
-		m_editBox->setPosition(Vec2(20.0f, 10.0f));
+		m_editBox->setPosition(Vec2(m_size.width - 780.0f, 10.0f));
 		m_editBox->setMaxLength(20);
 		std::string a = m_editBox->getStringValue();
 		m_scene->addChild(m_editBox);
@@ -110,17 +110,16 @@ void Hall::feedPlayerInformation(Scene * scene, HallPlayer* hallplayer)
 	{
 
 		std::string strName = strHead + int2String(i);
-		cocos2d::Label * player = (cocos2d::Label *) m_scene->getChildByName(strName);
+		cocos2d::Label * player = (cocos2d::Label *) m_scene->getChildByName("hallCanvas")->getChildByName(strName);
 		player->setZOrder(100);
-		//player->setSystemFontSize(50);
 		m_playerName[i] = hallplayer[i].playerName;
 		player->setString(hallplayer[i].playerName);
-		if (i==m_myPlayerNumber)
+		if (i == m_myPlayerNumber)
 		{
-			player->setTextColor(cocos2d::Color4B(241,148,131,100));
+			player->setTextColor(cocos2d::Color4B(241, 148, 131, 100));
 		}
 	}
-	
+
 }
 
 bool Hall::sendChatMessage(std::string strMessage) const
