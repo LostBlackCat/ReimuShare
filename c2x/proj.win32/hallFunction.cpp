@@ -99,14 +99,19 @@ void Hall::initializationHall(Scene * scene, HallPlayer* hallplayer)
 		//std::string a = m_editBox->getStringValue();
 		m_scene->addChild(m_editBox);
 
+		//ClientIPÊäÈë¿ò
+		m_IPConfig = cocos2d::ui::TextField::create("Input server's IP address here.", "Arial", 30);
+		:
+
 		//Ñ¡ÔñÊÇ·ñÊÇHost
 		m_changeisHost = cocos2d::ui::Button::create("button0.png", "button1.png", "button2.png");
 		
-		m_changeisHost->setTitleText("Host");
+		m_changeisHost->setTitleText("  Host");
+		m_changeisHost->setScale(3);
 		m_changeisHost->setTitleFontName("Î¢ÈíÑÅºÚ");
-		m_changeisHost->setTitleFontSize(30);
-		m_changeisHost->setAnchorPoint(Vec2(0, 0));
-		m_changeisHost->setPosition(Vec2(100.0f, 800.0f));
+		m_changeisHost->setTitleFontSize(15);
+		m_changeisHost->setAnchorPoint(Vec2(0, 1));
+		m_changeisHost->setPosition(Vec2(30.0f, m_size.height-30.0f));
 		m_changeisHost->addTouchEventListener([&](Ref * sender, ui::Widget::TouchEventType type)
 		{
 			switch (type)
@@ -248,10 +253,10 @@ void Hall::setHostStatus(bool target)
 	m_isHost[m_myPlayerNumber] = target;
 	if (target)
 	{
-		m_changeisHost->setTitleText("Host");
+		m_changeisHost->setTitleText("  Host");
 	}
 	else
 	{
-		m_changeisHost->setTitleText("Client");
+		m_changeisHost->setTitleText("  Client");
 	}
 }

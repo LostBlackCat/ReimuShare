@@ -149,6 +149,7 @@ public:
 protected:
 private:
 	std::string	m_playerName[playerNumber];
+	std::string m_chatRecord;
 	bool m_isHost[playerNumber] = { true,false,false,false };
 	unsigned m_myPlayerNumber = 0;
 	Scene * m_scene;
@@ -158,7 +159,7 @@ private:
 	cocos2d::ui::Button * m_sendButton;
 	cocos2d::ui::Button * m_changeisHost;
 	cocos2d::ui::TextField * m_editBox;
-	std::string m_chatRecord;
+	cocos2d::ui::TextField * m_IPConfig;
 	ChatroomServer * ptr = nullptr;
 	ChatroomClient * cptr = nullptr;
 };

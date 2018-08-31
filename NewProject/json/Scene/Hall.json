@@ -1282,7 +1282,7 @@
 										"colliders": []
 									},
 									"fontSize": 22,
-									"labelText": "点击上方切换发起/加入游戏状态哦😜",
+									"labelText": "点击上方切换\n发起/加入游戏状态哦",
 									"horizontalAlignment": "Center",
 									"verticalAlignment": "Center",
 									"overflowType": "Clamp",
