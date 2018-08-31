@@ -150,10 +150,11 @@ protected:
 private:
 	std::string	m_playerName[playerNumber];
 	bool m_isHost[playerNumber] = { true,false,false,false };
-	unsigned m_myPlayerNumber = 1;
+	unsigned m_myPlayerNumber = 0;
 	Scene * m_scene;
 	Size m_size;
-	cocos2d::ui::Text * m_record;
+	cocos2d::Label * m_record;
+	//cocos2d::ui::Text * m_record;
 	cocos2d::ui::Button * m_sendButton;
 	cocos2d::ui::Button * m_changeisHost;
 	cocos2d::ui::TextField * m_editBox;

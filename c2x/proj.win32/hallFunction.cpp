@@ -79,8 +79,10 @@ void Hall::initializationHall(Scene * scene, HallPlayer* hallplayer)
 			}
 		});
 		//初始化聊天记录框
-		m_record = cocos2d::ui::Text::create("Let's talk!","Arial",30);
-		m_record->setFontSize(30);
+		m_record = cocos2d::Label::create("Let's talk!","Arial",30);
+		//m_record = cocos2d::Label::create("Let's talk!","Arial",30);
+		//m_record = cocos2d::ui::Text::create("Let's talk!","Arial",30);
+		//m_record->setFontSize(30);
 		m_record->setAnchorPoint(Vec2(0, 0));
 		m_record->setPosition(Vec2(m_size.width - 780.0f, 50.0f));
 		m_record->setZOrder(2000);
@@ -98,7 +100,7 @@ void Hall::initializationHall(Scene * scene, HallPlayer* hallplayer)
 		m_scene->addChild(m_editBox);
 
 		//选择是否是Host
-		m_changeisHost = cocos2d::ui::Button::create("CloseNormal.png", "CloseNormal.png", "CloseNormal.png");
+		m_changeisHost = cocos2d::ui::Button::create("button0.png", "button1.png", "button2.png");
 		
 		m_changeisHost->setTitleText("Host");
 		m_changeisHost->setTitleFontName("微软雅黑");
