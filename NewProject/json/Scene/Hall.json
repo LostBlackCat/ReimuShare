@@ -166,7 +166,7 @@
 							"node": {
 								"contentSize": {
 									"w": 600,
-									"h": 900
+									"h": 450
 								},
 								"enabled": true,
 								"name": "shadowVertcial",
@@ -504,6 +504,53 @@
 								"object": {
 									"node": {
 										"contentSize": {
+											"w": 150,
+											"h": 150
+										},
+										"enabled": true,
+										"name": "headBxo",
+										"anchorPoint": {
+											"x": 0.5,
+											"y": 0.5
+										},
+										"cascadeOpacityEnabled": true,
+										"color": {
+											"r": 255,
+											"g": 255,
+											"b": 255
+										},
+										"globalZOrder": 0,
+										"localZOrder": 0,
+										"opacity": 255,
+										"opacityModifyRGB": false,
+										"position": {
+											"x": 0,
+											"y": 0
+										},
+										"rotationSkewX": 0,
+										"rotationSkewY": 0,
+										"scaleX": 1,
+										"scaleY": 1,
+										"skewX": 0,
+										"skewY": 0,
+										"tag": -1,
+										"groupIndex": 0,
+										"colliders": []
+									},
+									"spriteFrameName": "picture/headBxo.png",
+									"spriteType": "Simple",
+									"srcBlend": 770,
+									"dstBlend": 771,
+									"trimEnabled": true,
+									"sizeMode": "Custom"
+								},
+								"object_type": "Sprite",
+								"children": []
+							},
+							{
+								"object": {
+									"node": {
+										"contentSize": {
 											"w": 0,
 											"h": 0
 										},
@@ -639,6 +686,53 @@
 						},
 						"object_type": "Sprite",
 						"children": [
+							{
+								"object": {
+									"node": {
+										"contentSize": {
+											"w": 150,
+											"h": 150
+										},
+										"enabled": true,
+										"name": "headBxo",
+										"anchorPoint": {
+											"x": 0.5,
+											"y": 0.5
+										},
+										"cascadeOpacityEnabled": true,
+										"color": {
+											"r": 255,
+											"g": 255,
+											"b": 255
+										},
+										"globalZOrder": 0,
+										"localZOrder": 0,
+										"opacity": 255,
+										"opacityModifyRGB": false,
+										"position": {
+											"x": 0,
+											"y": 0
+										},
+										"rotationSkewX": 0,
+										"rotationSkewY": 0,
+										"scaleX": 1,
+										"scaleY": 1,
+										"skewX": 0,
+										"skewY": 0,
+										"tag": -1,
+										"groupIndex": 0,
+										"colliders": []
+									},
+									"spriteFrameName": "picture/headBxo.png",
+									"spriteType": "Simple",
+									"srcBlend": 770,
+									"dstBlend": 771,
+									"trimEnabled": true,
+									"sizeMode": "Custom"
+								},
+								"object_type": "Sprite",
+								"children": []
+							},
 							{
 								"object": {
 									"node": {
@@ -782,6 +876,53 @@
 								"object": {
 									"node": {
 										"contentSize": {
+											"w": 150,
+											"h": 150
+										},
+										"enabled": true,
+										"name": "headBxo",
+										"anchorPoint": {
+											"x": 0.5,
+											"y": 0.5
+										},
+										"cascadeOpacityEnabled": true,
+										"color": {
+											"r": 255,
+											"g": 255,
+											"b": 255
+										},
+										"globalZOrder": 0,
+										"localZOrder": 0,
+										"opacity": 255,
+										"opacityModifyRGB": false,
+										"position": {
+											"x": 0,
+											"y": 75
+										},
+										"rotationSkewX": 0,
+										"rotationSkewY": 0,
+										"scaleX": 1,
+										"scaleY": 1,
+										"skewX": 0,
+										"skewY": 0,
+										"tag": -1,
+										"groupIndex": 0,
+										"colliders": []
+									},
+									"spriteFrameName": "picture/headBxo.png",
+									"spriteType": "Simple",
+									"srcBlend": 770,
+									"dstBlend": 771,
+									"trimEnabled": true,
+									"sizeMode": "Custom"
+								},
+								"object_type": "Sprite",
+								"children": []
+							},
+							{
+								"object": {
+									"node": {
+										"contentSize": {
 											"w": 0,
 											"h": 0
 										},
@@ -921,6 +1062,53 @@
 								"object": {
 									"node": {
 										"contentSize": {
+											"w": 150,
+											"h": 150
+										},
+										"enabled": true,
+										"name": "headBxo",
+										"anchorPoint": {
+											"x": 0.5,
+											"y": 0.5
+										},
+										"cascadeOpacityEnabled": true,
+										"color": {
+											"r": 255,
+											"g": 255,
+											"b": 255
+										},
+										"globalZOrder": 0,
+										"localZOrder": 0,
+										"opacity": 255,
+										"opacityModifyRGB": false,
+										"position": {
+											"x": 0,
+											"y": 0
+										},
+										"rotationSkewX": 0,
+										"rotationSkewY": 0,
+										"scaleX": 1,
+										"scaleY": 1,
+										"skewX": 0,
+										"skewY": 0,
+										"tag": -1,
+										"groupIndex": 0,
+										"colliders": []
+									},
+									"spriteFrameName": "picture/headBxo.png",
+									"spriteType": "Simple",
+									"srcBlend": 770,
+									"dstBlend": 771,
+									"trimEnabled": true,
+									"sizeMode": "Custom"
+								},
+								"object_type": "Sprite",
+								"children": []
+							},
+							{
+								"object": {
+									"node": {
+										"contentSize": {
 											"w": 0,
 											"h": 0
 										},
@@ -1009,6 +1197,103 @@
 						},
 						"object_type": "Label",
 						"children": []
+					},
+					{
+						"object": {
+							"node": {
+								"contentSize": {
+									"w": 241,
+									"h": 208
+								},
+								"enabled": true,
+								"name": "bubble",
+								"anchorPoint": {
+									"x": 0.5,
+									"y": 0.5
+								},
+								"cascadeOpacityEnabled": true,
+								"color": {
+									"r": 255,
+									"g": 255,
+									"b": 255
+								},
+								"globalZOrder": 0,
+								"localZOrder": 0,
+								"opacity": 179,
+								"opacityModifyRGB": false,
+								"position": {
+									"x": -429.5,
+									"y": 4
+								},
+								"rotationSkewX": 0,
+								"rotationSkewY": 0,
+								"scaleX": 1,
+								"scaleY": 1,
+								"skewX": 0,
+								"skewY": 0,
+								"tag": -1,
+								"groupIndex": 0,
+								"colliders": []
+							},
+							"spriteFrameName": "picture/bubble.png",
+							"spriteType": "Simple",
+							"srcBlend": 770,
+							"dstBlend": 771,
+							"trimEnabled": true,
+							"sizeMode": "Trimmed"
+						},
+						"object_type": "Sprite",
+						"children": [
+							{
+								"object": {
+									"node": {
+										"contentSize": {
+											"w": 201,
+											"h": 98
+										},
+										"enabled": true,
+										"name": "label",
+										"anchorPoint": {
+											"x": 0.5,
+											"y": 0.5
+										},
+										"cascadeOpacityEnabled": true,
+										"color": {
+											"r": 59,
+											"g": 58,
+											"b": 58
+										},
+										"globalZOrder": 0,
+										"localZOrder": 0,
+										"opacity": 255,
+										"opacityModifyRGB": false,
+										"position": {
+											"x": 0,
+											"y": 5
+										},
+										"rotationSkewX": 0,
+										"rotationSkewY": 0,
+										"scaleX": 1,
+										"scaleY": 1,
+										"skewX": 0,
+										"skewY": 0,
+										"tag": -1,
+										"groupIndex": 0,
+										"colliders": []
+									},
+									"fontSize": 22,
+									"labelText": "点击上方切换发起/加入游戏状态哦😜",
+									"horizontalAlignment": "Center",
+									"verticalAlignment": "Center",
+									"overflowType": "Clamp",
+									"enableWrap": true,
+									"fontType": "System",
+									"fontName": "arial"
+								},
+								"object_type": "Label",
+								"children": []
+							}
+						]
 					}
 				]
 			},
@@ -1195,11 +1480,11 @@
 				"x": 0,
 				"y": 0,
 				"w": 800,
-				"h": 800
+				"h": 790
 			},
 			"offset": {
 				"x": 0,
-				"y": 0
+				"y": 5
 			},
 			"rotated": false,
 			"originalSize": {
@@ -1210,7 +1495,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 800,
-				"h": 800
+				"h": 790
 			}
 		},
 		{
@@ -1314,6 +1599,31 @@
 			}
 		},
 		{
+			"name": "picture/headBxo.png",
+			"texturePath": "creator/picture/headBxo.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 136,
+				"h": 135
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 136,
+				"h": 135
+			},
+			"centerRect": {
+				"x": 0,
+				"y": 0,
+				"w": 136,
+				"h": 135
+			}
+		},
+		{
 			"name": "picture/head-0.png",
 			"texturePath": "creator/picture/head-0.png",
 			"rect": {
@@ -1411,6 +1721,31 @@
 				"y": 0,
 				"w": 304,
 				"h": 302
+			}
+		},
+		{
+			"name": "picture/bubble.png",
+			"texturePath": "creator/picture/bubble.png",
+			"rect": {
+				"x": 9,
+				"y": 8,
+				"w": 241,
+				"h": 208
+			},
+			"offset": {
+				"x": 1.5,
+				"y": -0.5
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 256,
+				"h": 223
+			},
+			"centerRect": {
+				"x": 0,
+				"y": 0,
+				"w": 241,
+				"h": 208
 			}
 		}
 	],
