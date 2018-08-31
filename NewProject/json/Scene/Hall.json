@@ -75,10 +75,10 @@
 									"h": 900
 								},
 								"enabled": true,
-								"name": "hallBackground",
+								"name": "background",
 								"anchorPoint": {
-									"x": 0,
-									"y": 0
+									"x": 0.5,
+									"y": 0.5
 								},
 								"cascadeOpacityEnabled": true,
 								"color": {
@@ -91,8 +91,8 @@
 								"opacity": 255,
 								"opacityModifyRGB": false,
 								"position": {
-									"x": -800,
-									"y": -450
+									"x": 0,
+									"y": 0
 								},
 								"rotationSkewX": 0,
 								"rotationSkewY": 0,
@@ -104,7 +104,7 @@
 								"groupIndex": 0,
 								"colliders": []
 							},
-							"spriteFrameName": "picture/background.png",
+							"spriteFrameName": "picture/background.jpg",
 							"spriteType": "Simple",
 							"srcBlend": 770,
 							"dstBlend": 771,
@@ -265,6 +265,53 @@
 									"text": ""
 								},
 								"object_type": "EditBox",
+								"children": []
+							},
+							{
+								"object": {
+									"node": {
+										"contentSize": {
+											"w": 400,
+											"h": 400
+										},
+										"enabled": true,
+										"name": "sc",
+										"anchorPoint": {
+											"x": 0.5,
+											"y": 0.5
+										},
+										"cascadeOpacityEnabled": true,
+										"color": {
+											"r": 255,
+											"g": 255,
+											"b": 255
+										},
+										"globalZOrder": 0,
+										"localZOrder": 0,
+										"opacity": 255,
+										"opacityModifyRGB": false,
+										"position": {
+											"x": -1200,
+											"y": 200
+										},
+										"rotationSkewX": 0,
+										"rotationSkewY": 0,
+										"scaleX": 1,
+										"scaleY": 1,
+										"skewX": 0,
+										"skewY": 0,
+										"tag": -1,
+										"groupIndex": 0,
+										"colliders": []
+									},
+									"spriteFrameName": "picture/sc.png",
+									"spriteType": "Simple",
+									"srcBlend": 770,
+									"dstBlend": 771,
+									"trimEnabled": true,
+									"sizeMode": "Custom"
+								},
+								"object_type": "Sprite",
 								"children": []
 							},
 							{
@@ -1067,13 +1114,13 @@
 	"resolutionFitHeight": false,
 	"spriteFrames": [
 		{
-			"name": "picture/background.png",
-			"texturePath": "creator/picture/background.png",
+			"name": "picture/background.jpg",
+			"texturePath": "creator/picture/background.jpg",
 			"rect": {
 				"x": 0,
 				"y": 0,
-				"w": 1304,
-				"h": 733
+				"w": 700,
+				"h": 438
 			},
 			"offset": {
 				"x": 0,
@@ -1081,14 +1128,14 @@
 			},
 			"rotated": false,
 			"originalSize": {
-				"w": 1304,
-				"h": 733
+				"w": 700,
+				"h": 438
 			},
 			"centerRect": {
 				"x": 0,
 				"y": 0,
-				"w": 1304,
-				"h": 733
+				"w": 700,
+				"h": 438
 			}
 		},
 		{
@@ -1139,6 +1186,31 @@
 				"y": 0,
 				"w": 20,
 				"h": 15
+			}
+		},
+		{
+			"name": "picture/sc.png",
+			"texturePath": "creator/picture/sc.png",
+			"rect": {
+				"x": 0,
+				"y": 0,
+				"w": 800,
+				"h": 800
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"rotated": false,
+			"originalSize": {
+				"w": 800,
+				"h": 800
+			},
+			"centerRect": {
+				"x": 0,
+				"y": 0,
+				"w": 800,
+				"h": 800
 			}
 		},
 		{

@@ -10,8 +10,7 @@
 
 extern Hall hall;
 
-bool  playerIsHost;
-
+//bool  playerIsHost;
 
 ////玩家数量默认为4，若要改动请对应更改UI
 //unsigned Hall::playerNumber = 4;
@@ -34,11 +33,11 @@ void Hall::initializationHall(Scene * scene, HallPlayer* hallplayer)
 	//聊天室收发
 	if (isHost())
 	{
-		ptr = server_start(boost::bind(&Hall::messageListener,this,_1));
+		ptr = server_start(boost::bind(&Hall::messageListener, this, _1));
 	}
 	else
 	{
-		cptr = client_start(IP, boost::bind(&Hall::messageListener, this,_1));
+		cptr = client_start(IP, boost::bind(&Hall::messageListener, this, _1));
 	}
 
 	//获取可视尺寸
@@ -80,21 +79,61 @@ void Hall::initializationHall(Scene * scene, HallPlayer* hallplayer)
 			}
 		});
 		//初始化聊天记录框
-		m_record = cocos2d::ui::Text::create("Let's talk!", "..\\font\\gameFont.ttf", 32);
-		m_record->setFontSize(30.0f);
+		m_record = cocos2d::ui::Text::create("Let's talk!","Arial",30);
+		m_record->setFontSize(30);
 		m_record->setAnchorPoint(Vec2(0, 0));
 		m_record->setPosition(Vec2(m_size.width - 780.0f, 50.0f));
+		m_record->setZOrder(2000);
 		m_scene->addChild(m_record);
 
 		//初始化信息输入窗口
-		m_editBox = cocos2d::ui::TextField::create("Click here and input message", "..\\font\\gameFont.ttf", 32);
-		m_editBox->setFontSize(30.0f);
+		m_editBox = cocos2d::ui::TextField::create("Click here and input message", "Arial", 30);
+		m_editBox->setFontSize(30);
 		m_editBox->setPlaceHolder("Click here and input message");
 		m_editBox->setAnchorPoint(Vec2(0, 0));
 		m_editBox->setPosition(Vec2(m_size.width - 780.0f, 10.0f));
 		m_editBox->setMaxLength(20);
-		std::string a = m_editBox->getStringValue();
+		m_editBox->setZOrder(2001);
+		//std::string a = m_editBox->getStringValue();
 		m_scene->addChild(m_editBox);
+
+		//选择是否是Host
+		m_changeisHost = cocos2d::ui::Button::create("CloseNormal.png", "CloseNormal.png", "CloseNormal.png");
+		
+		m_changeisHost->setTitleText("Host");
+		m_changeisHost->setTitleFontName("微软雅黑");
+		m_changeisHost->setTitleFontSize(30);
+		m_changeisHost->setAnchorPoint(Vec2(0, 0));
+		m_changeisHost->setPosition(Vec2(100.0f, 800.0f));
+		m_changeisHost->addTouchEventListener([&](Ref * sender, ui::Widget::TouchEventType type)
+		{
+			switch (type)
+			{
+			case cocos2d::ui::Widget::TouchEventType::BEGAN:
+				hanyuuLog("HOST TOUCHED");
+				break;
+			case cocos2d::ui::Widget::TouchEventType::MOVED:
+				break;
+			case cocos2d::ui::Widget::TouchEventType::ENDED:
+				if (hall.isHost())
+				{
+					hall.setHostStatus(false);
+					hanyuuLog("Turn to host now");
+				}
+				else
+				{
+					hall.setHostStatus(true);
+					hanyuuLog("Turn to client now");
+				}
+				break;
+			case cocos2d::ui::Widget::TouchEventType::CANCELED:
+				break;
+			default:
+				break;
+			}
+		}
+		);
+		m_scene->addChild(m_changeisHost);
 
 		hanyuuLog("Class hall get scene sucess.");
 	}
@@ -152,15 +191,16 @@ void Hall::clearEditBox()
 
 void Hall::addMessageRecord(std::string str)
 {
-	m_chatRecord += "[" + m_playerName[m_myPlayerNumber] + "]" + str + "\n";
+	m_chatRecord += "\n[" + m_playerName[m_myPlayerNumber] + "]" + str + "";
 	m_record->setString(m_chatRecord);
 	hanyuuLog("[Chat record]\n" + m_chatRecord + "\n");
 }
 
 void Hall::addMessageRecord(std::string str, std::string userName)
 {
-	m_chatRecord = m_chatRecord + "[" + userName + "]\n    " + str + "\n";
+	m_chatRecord += "\n[" + userName + "]" + str + "";
 	m_record->setString(m_chatRecord);
+	hanyuuLog("[Chat record]\n" + m_chatRecord + "\n");
 }
 
 bool Hall::isHost() const
@@ -181,12 +221,13 @@ std::string Hall::getUserName() const
 
 void Hall::messageListener(boost::shared_ptr<ChatMessage> mp)
 {
+	hanyuuLog("[Receive message from:" + mp->playerName + "]\n    " + mp->message);
 	hall.addMessageRecord(mp->message, mp->playerName);
-	hanyuuLog("[Receive message from:" + mp->playerName + "\n    " + mp->message);
 }
 
 void  Hall::clientPostMessage(std::string strMessage, std::string userName)
 {
+	hanyuuLog("[" + m_playerName[m_myPlayerNumber] + " Post message]\n    " + strMessage);
 	ChatMessage  CMMessageFrame;
 	CMMessageFrame.playerName = userName;
 	CMMessageFrame.message = strMessage;
@@ -198,5 +239,17 @@ void  Hall::clientPostMessage(std::string strMessage, std::string userName)
 	{
 		cptr->post(CMMessageFrame);
 	}
-	hanyuuLog("[Post message]\n    " + strMessage);
+}
+
+void Hall::setHostStatus(bool target)
+{
+	m_isHost[m_myPlayerNumber] = target;
+	if (target)
+	{
+		m_changeisHost->setTitleText("Host");
+	}
+	else
+	{
+		m_changeisHost->setTitleText("Client");
+	}
 }
