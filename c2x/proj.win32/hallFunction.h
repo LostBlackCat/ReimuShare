@@ -133,10 +133,19 @@ public:
 	Description:设置是否为Host
 	Created:20180831
 	Parameter:bool:目标Host状态
-	Return:string:VOID
+	Return:VOID
 	Author:Hanyuu
 	*/
 	void setHostStatus(bool);
+	/*
+	Function name:getIPaddress
+	Description:从EditBox获取IP地址
+	Created:20180901
+	Parameter:VOID
+	Return:string:IP地址
+	Author:Hanyuu
+	*/
+	std::string getIPAdress();
 	/*
 	Function name:sendMessage
 	Description:发送聊天信息

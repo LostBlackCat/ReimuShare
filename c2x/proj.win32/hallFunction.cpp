@@ -270,3 +270,9 @@ void Hall::setHostStatus(bool target)
 		m_changeisHost->setTitleText("  Client");
 	}
 }
+
+std::string getIPAdress()
+{
+	std::string tempIPAdress;
+	return tempIPAdress;
+}
