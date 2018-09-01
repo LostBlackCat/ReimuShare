@@ -100,8 +100,18 @@ void Hall::initializationHall(Scene * scene, HallPlayer* hallplayer)
 		m_scene->addChild(m_editBox);
 
 		//ClientIP输入框
-		m_IPConfig = cocos2d::ui::TextField::create("Input server's IP address here.", "Arial", 30);
-		:
+		m_IPConfig = cocos2d::ui::TextField::create("127.0.0.1", "Arial", 30);
+		m_IPConfig->setFontSize(30);
+		m_IPConfig->setPlaceHolder("Input service's IP here");
+		m_IPConfig->setAnchorPoint(Vec2(0, 1));
+		m_IPConfig->setPosition(Vec2(50, m_size.height - 150));
+		m_IPConfig->setMaxLength(20);
+		m_IPConfig->setZOrder(100);
+		m_IPConfig->setVisible(true);
+		m_scene->addChild(m_IPConfig);
+
+
+
 
 		//选择是否是Host
 		m_changeisHost = cocos2d::ui::Button::create("button0.png", "button1.png", "button2.png");
