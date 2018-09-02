@@ -153,7 +153,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="chatroom_client.cpp" />
     <ClCompile Include="chatroom_server.cpp" />
-    <ClCompile Include="hallFunction.cpp" />
+    <ClCompile Include="hall.cpp" />
     <ClCompile Include="hallTools.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="reader\animation\AnimateClip.cpp" />
@@ -197,7 +197,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="chatroom_client.h" />
     <ClInclude Include="chatroom_server.h" />
     <ClInclude Include="chat_message.h" />
-    <ClInclude Include="hallFunction.h" />
+    <ClInclude Include="hall.h" />
     <ClInclude Include="hallPlayer.h" />
     <ClInclude Include="hallTools.h" />
     <ClInclude Include="main.h" />

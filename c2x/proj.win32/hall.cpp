@@ -4,7 +4,7 @@
 //	提供控制大厅的类
 #define IP "127.0.0.1"
 
-#include "hallFunction.h"
+#include "hall.h"
 
 #include"chatroom_client.h"
 

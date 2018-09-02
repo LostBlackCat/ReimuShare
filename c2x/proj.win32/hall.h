@@ -9,6 +9,7 @@
 //	提供控制大厅的类
 
 #include <string>
+#include <list>
 #include <exception>
 #include "reader/CreatorReader.h"
 #include "hallPlayer.h"
@@ -158,7 +159,6 @@ public:
 protected:
 private:
 	std::string	m_playerName[playerNumber];
-	std::string m_chatRecord;
 	bool m_isHost[playerNumber] = { true,false,false,false };
 	unsigned m_myPlayerNumber = 0;
 	Scene * m_scene;
@@ -171,6 +171,12 @@ private:
 	cocos2d::ui::TextField * m_IPConfig;
 	ChatroomServer * ptr = nullptr;
 	ChatroomClient * cptr = nullptr;
+
+	//实验性功能
+	std::list<MessageRecord> * m_messageRecord;
+	//即将弃用
+	std::string m_chatRecord;
+
 };
 
 //#endif

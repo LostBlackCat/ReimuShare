@@ -126,9 +126,6 @@
     <ClCompile Include="reader\dragonbones\animation\WorldClock.cpp">
       <Filter>reader</Filter>
     </ClCompile>
-    <ClCompile Include="hallFunction.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="testCode.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -137,6 +134,9 @@
     </ClCompile>
     <ClCompile Include="chatroom_client.cpp" />
     <ClCompile Include="chatroom_server.cpp" />
+    <ClCompile Include="hall.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -316,9 +316,6 @@
     <ClInclude Include="reader\dragonbones\animation\WorldClock.h">
       <Filter>reader</Filter>
     </ClInclude>
-    <ClInclude Include="hallFunction.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="hallPlayer.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -330,6 +327,9 @@
     </ClInclude>
     <ClInclude Include="chatroom_client.h" />
     <ClInclude Include="chatroom_server.h" />
+    <ClInclude Include="hall.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
